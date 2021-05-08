@@ -1,0 +1,8 @@
+#todo need to migrate things to a vendor folder to ignore out
+/js/jQuery
+/js/ScrollMagic
+/fonts
+
+# mac specific files
+._*
+.DS_Store
