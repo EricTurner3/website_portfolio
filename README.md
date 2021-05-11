@@ -1,14 +1,19 @@
 # portfolio
  My current website at [ericturner.it](https://ericturner.it)
 
- Some files and libraries are left over from previous years codebases.
+
+Framework & Resources
+===
+* [Gatsby.js](https://www.gatsbyjs.com/) - Front end framework for static sites
+* [React](https://reactjs.org/) - Gatsby.js is built on top of React!
+* [Tailwind CSS](https://tailwindcss.com/) - Front end CSS framework that ties in with React, also includes Inter font
+* [Blobmaker.app](https://www.blobmaker.app/) - Randomly generated blob that goes behind my avatar
+* [React Chrono](https://github.com/prabhuignoto/react-chrono) - Vertical timeline plugin for React
+* [Flat Icon](https://flaticon/com) - Sun & Moon SVG icons for light/dark mode
+* [Bitmoji](https://bitmoji.com) - avatar generation
 
 
- Requirements
- ====
-
-* jQuery 3.6.0
-* jQuery Terminal 2.22.0
-* jQuery UI - v1.12.1
-* PrismJS 1.23.0
-* Source Code Pro Web Fonts
+Inspiration
+===
+* jeffjadulco.com - Dark mode / light mode, avatar blob idea, project grid
+* [Freelancer Landing Page // Dribbble.com](https://dribbble.com/shots/15319926-Freelancer-Landing-Page) - hero
