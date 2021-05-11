@@ -1,24 +1,30 @@
 const data_work = [
     {
-        title: "May 2017",
-        cardTitle: "Summer Technology Assistant",
-        cardSubtitle: "MSD Warren Township // Indianapolis, IN",
-        cardDetailedText: `For IUPUI, I needed to fulfill an internship credit, I chose to go back to my former school district and help out in technology. I performed data entry, data cleanup, and mass device setup and cleanup.`
+        title: "Summer Technology Assistant",
+        start: "May 2017",
+        end: "Jul 2017",
+        org: "MSD Warren Township",
+        location: "Indianapolis, IN",
+        info: `For IUPUI, I needed to fulfill an internship credit, I chose to go back to my former school district and help out in technology. I performed data entry, data cleanup, and mass device setup and cleanup.`
     },
     {
-        title: "Jul 2017",
-        cardTitle: "Tech Support I",
-        cardSubtitle: "MSD Warren Township // Indianapolis, IN",
-        cardDetailedText: `I was hired on part-time to continue my career in the MSD of Warren Township; I was assigned
+        title: "Tech Support I",
+        start: "Jul 2017",
+        end: "May 2018",
+        org: "MSD Warren Township",
+        location: "Indianapolis, IN",
+        info: `I was hired on part-time to continue my career in the MSD of Warren Township; I was assigned
         three buildings in our district to complete technology work orders which could include: troubleshooting a multitude of
         devices from laptop, projector, smart board, iPad, or chromebook; pickup of broken devices for repair, help students at
         the high school with ChromeDesk.`
     },
     {
-        title: "May 2018",
-        cardTitle: "Systems Integration Developer",
-        cardSubtitle: "MSD Warren Township // Indianapolis, IN",
-        cardDetailedText: `Near the completion of my college career, I was more proficient in creating applications. I was
+        title: "Systems Integration Developer",
+        start: "May 2018",
+        end: "Present",
+        org: "MSD Warren Township",
+        location: "Indianapolis, IN",
+        info: `Near the completion of my college career, I was more proficient in creating applications. I was
         promoted to this position to create custom-built applications that could integrate with our already existing student
         information system, asset manager, and ticketing system. These apps would vary between internal-use tech department
         tools, to full district-wide adoption. I built a custom API, and tracking system to be able to monitor and debug issues.

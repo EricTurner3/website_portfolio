@@ -1,5 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import ShowMoreText from 'react-show-more-text'
+
+import { OfficeBuildingIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 
 export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   const textColor = selected ? "text-accent" : "text-secondary"
@@ -11,32 +14,36 @@ export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   )
 }
 
-export const Heading = ({ children }) => {
-  return (
-    <h2 className="relative mt-12 mb-3 text-2xl font-bold text-accent">
-      {children}
-    </h2>
-  )
-}
-
-export const SubHeading = ({ children }) => {
-  return (
-    <h2 className="relative mt-6 mb-2 text-lg font-semibold text-primary">
-      {children}
-    </h2>
-  )
-}
-
-export const Paragraph = ({ children }) => {
-  return (
-    <p className=" max-w-screen-md mb-4 font-normal text-base leading-relaxed md:leading-normal text-tertiary">
-      {children}
-    </p>
-  )
-}
-
-export const Strong = ({ children }) => {
-  return <strong className="font-semibold text-accent">{children}</strong>
+export const ExperienceBlock = ({ icon, title, start, end, org, location, info }) => {
+    return (
+      <li>
+        <div className="mb-5">
+          <p className = "text-tertiary text-sm">{start} - {end}</p>
+          <p className="text-primary font-bold text-lg">{title}</p>
+          <div className="ml-5">
+            <p className="flex align-middle"><OfficeBuildingIcon className="w-4 text-tertiary"/>{" "}{org}</p>
+            <p className="flex align-middle"><LocationMarkerIcon className="w-4 text-tertiary"/>{" "}{location}</p>
+            <p className="mt-2 text-tertiary">
+              <ShowMoreText
+                  /* Default options */
+                  lines={1}
+                  more='View Info'
+                  less='Hide Info'
+                  className=''
+                  anchorClass='text-accent'
+                  onClick=""
+                  expanded={false}
+                  width={0}
+              >
+                  {info} 
+              </ShowMoreText>
+            </p>
+          </div>
+          
+        </div>
+          
+      </li>
+    )
 }
 
 export const ExtLink = ({ children, link, newTab }) => {
@@ -101,6 +108,31 @@ export const ProjectPill = ({ label }) => {
   )
 }
 
+export const Heading = ({ children }) => {
+  return (
+    <h2 className="relative mt-12 mb-3 text-2xl font-bold text-accent">
+      {children}
+    </h2>
+  )
+}
+
+export const SubHeading = ({ children }) => {
+  return (
+    <h2 className="relative mt-6 mb-2 text-lg font-semibold text-primary">
+      {children}
+    </h2>
+  )
+}
+
+export const Paragraph = ({ children }) => {
+  return (
+    <p className=" max-w-screen-md mb-4 font-normal text-base leading-relaxed md:leading-normal text-tertiary">
+      {children}
+    </p>
+  )
+}
+
+
 export const Button = ({ children, link, width }) => {
   let padding = "px-4 py-2"
 
@@ -154,7 +186,7 @@ export const LaptopBackground = _ => {
             <stop offset="1" stop-color="var(--color-stop-12)" />
         </linearGradient>
       </svg>
-      <div className="relative fluid  h-48 md:h-56 lg:h-72" style={{"clip-path": "inset(23.19% 12.36% 29.76% 12.03%)"}}>
+      <div className="relative fluid  h-48 md:h-56 lg:h-72" style={{"clipPath": "inset(23.19% 12.36% 29.76% 12.03%)"}}>
         <svg 
           className="fluid-rotate-faster h-full text-fill-primary fluid-gradient"
           viewBox="15 15 175 170"
