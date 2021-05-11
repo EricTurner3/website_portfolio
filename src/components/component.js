@@ -1,16 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 import ShowMoreText from 'react-show-more-text'
 
 import { OfficeBuildingIcon, LocationMarkerIcon } from '@heroicons/react/outline'
+
+import { LocalizedLink } from "gatsby-theme-i18n"
 
 export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   const textColor = selected ? "text-accent" : "text-secondary"
   const style = `font-normal text-base hover:text-accent transition duration-150 ${textColor}`
   return (
-    <Link to={to} title={title}>
+    <LocalizedLink to={to} title={title}>
       <span className={style}>{children}</span>
-    </Link>
+    </LocalizedLink>
   )
 }
 

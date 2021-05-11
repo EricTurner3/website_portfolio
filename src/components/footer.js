@@ -1,8 +1,10 @@
 import React from "react"
 import { ExtLink } from "./component"
+import { useTranslation } from "react-i18next"
 
 
 const Footer = ({footerType}) => {
+  const { t } = useTranslation()
   return (
     <footer className= {footerType + " w-full h-56 text-secondary overflow-hidden bg-secondary  bottom-0"}>
       <div className="container h-full md:max-w-screen-md lg:max-w-screen-xl m-auto px-5 md:px-20 pb-12 pt-24">
@@ -12,7 +14,7 @@ const Footer = ({footerType}) => {
               className="text-xs tracking-wider self-center md:self-end"
               aria-label="Copyright"
             >
-              © 2021 Eric Turner. All Rights Reserved. / <ExtLink link="https://www.flaticon.com/free-icon/sun_66275" newTab>Sun</ExtLink> & <ExtLink link="https://www.flaticon.com/free-icon/moon_702471" newTab>Moon</ExtLink> Icon provided by flaticon
+              © 2021 Eric Turner. {t('footer-reserved')}. / <ExtLink link="https://www.flaticon.com/free-icon/sun_66275" newTab>Sun</ExtLink> & <ExtLink link="https://www.flaticon.com/free-icon/moon_702471" newTab>Moon</ExtLink> {t('footer-icons')}
             </span>
             <div className="flex flex-row items-center space-x-4 justify-center md:justify-end">
               <span>

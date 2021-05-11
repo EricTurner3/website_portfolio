@@ -1,6 +1,9 @@
 module.exports = {
-  siteMetadata: {
-    title: "My Gatsby Site",
+   siteMetadata: {
+    siteUrl: `https://ericturner.it`,
+    title: "My Portfolio - Eric Turner",
+    description: `My web portfolio in Gatsby + React JS`,
+    author: `Eric Turner`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -28,5 +31,21 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+        defaultLang: `en`,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n-react-i18next`,
+      options: {
+        locales: `./i18n/lang`,
+        i18nextOptions: {
+          ns: ["translation"],
+        },
+      },
+    }
   ],
 };

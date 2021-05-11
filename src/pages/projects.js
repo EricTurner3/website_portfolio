@@ -2,15 +2,21 @@ import React from "react"
 import { Heading } from "../components/component"
 import Layout from "../components/layout"
 import ProjectGrid from "../components/projectGrid"
+import { useTranslation } from "react-i18next"
 
-const ProjectsPage = () => (
-  <Layout activePage="projects" >
-    <Heading>Project Showcase</Heading>
-    <p className="text-tertiary">Some of my more notable projects!</p>
+const ProjectsPage = () => 
+{
+  const { t, i18n } = useTranslation()
 
-    <ProjectGrid />
-    
-  </Layout>
-)
+  return (
+    <Layout activePage="projects" >
+      <Heading>{t('project_header')}</Heading>
+      <p className="text-tertiary">{t('project_subheader')}</p>
+
+      <ProjectGrid />
+      
+    </Layout>
+  )
+}
 
 export default ProjectsPage
