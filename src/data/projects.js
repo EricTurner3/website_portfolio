@@ -1,4 +1,4 @@
-export default [
+const data_projects = [
     {
         title: "Prom Ticket Web App",
         types:[
@@ -88,3 +88,5 @@ export default [
         ],
     }
 ]
+
+export default data_projects;
