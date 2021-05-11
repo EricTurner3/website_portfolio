@@ -22,8 +22,8 @@ export const ExperienceBlock = ({ icon, title, start, end, org, location, info }
           <p className = "text-tertiary text-sm">{start} - {end}</p>
           <p className="text-primary font-bold text-lg">{title}</p>
           <div className="ml-5">
-            <p className="flex align-middle"><OfficeBuildingIcon className="w-4 text-tertiary"/>{" "}{org}</p>
-            <p className="flex align-middle"><LocationMarkerIcon className="w-4 text-tertiary"/>{" "}{location}</p>
+            <div className="flex align-middle"><i className="self-center"><OfficeBuildingIcon className="w-4 text-tertiary"/></i><span className="text-medium sm:text-xs">{" "}{org}</span></div>
+            <div className="flex align-middle"><i className="self-center"><LocationMarkerIcon className="w-4 text-tertiary"/></i><span className="text-medium sm:text-xs">{" "}{location}</span></div>
             <p className="mt-2 text-tertiary">
               <ShowMoreText
                   /* Default options */
