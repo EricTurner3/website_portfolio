@@ -1,12 +1,14 @@
 import React from "react"
 import projects from "../data/projects"
 import { ProjectLink, ProjectPill } from "./component"
+import { useTranslation } from "react-i18next"
 
 const ProjectGrid = _ => {
+  const { i18n } = useTranslation()
   return (
     <section className="mb-5 ml-5 mr-5">
       <ul className="mt-3 -mx-5 grid md:grid-cols-2 gap-6 md:gap-6">
-        {projects.map(project => {
+        {projects[i18n.language].map(project => {
           return (
             <li
               key={project.title}
