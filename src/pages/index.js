@@ -1,5 +1,5 @@
 import React from "react"
-import { LaptopBackground } from "../components/component"
+import { LaptopBackground, Button } from "../components/component"
 import Layout from "../components/layout"
 import Avatar from "../components/image"
 import Work from "../components/work"
@@ -17,8 +17,11 @@ const IndexPage = () => (
           </p>
           <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
             As an Integration Developer, I create applications and experiences to connect multiple existing systems together into one hub for ease-of-use and efficiency. I discovered my passion for full-stack development in college and I realized I loved creating experiences from the ground up to increase efficiency and data integrity across the board. I was given an excellent employment opportunity at my former school district to really let my talents and creativity shine.
-          </p>
+          </p> <br />
+          <Button link={'/resume.pdf'}>📃 My Résumé</Button> {" "}
+          <Button link="mailto:me@ericturner.it">👋 Contact Me</Button>
         </div>
+        
       </div>
       
       <div id="avatar-right" className="relative h-48 md:h-56 lg:h-72">
