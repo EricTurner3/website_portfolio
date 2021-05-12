@@ -1,7 +1,8 @@
 module.exports = {
    siteMetadata: {
     siteUrl: `https://ericturner.it`,
-    title: "My Portfolio - Eric Turner",
+    title: "My Portfolio",
+    titleTemplate: '%s · Eric Turner',
     description: `My web portfolio in Gatsby + React JS`,
     author: `Eric Turner`,
   },

@@ -5,11 +5,13 @@ import Avatar from "../components/image"
 import Experience from "../components/experience"
 import { useTranslation } from "react-i18next"
 import data_me from "../data/intro.js"
+import SEO from "../components/seo"
 
 const IndexPage = () => {
   const { i18n } = useTranslation()
   return (
     <Layout activePage="/">
+    <SEO />
       <div className="mt-12 flex flex-col-reverse lg:flex-row items-center lg:justify-between lg:space-x-6">
         <div className="flex flex-row">
           {data_me[i18n.language].map(me => {

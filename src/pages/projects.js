@@ -3,6 +3,7 @@ import { Heading } from "../components/component"
 import Layout from "../components/layout"
 import ProjectGrid from "../components/projectGrid"
 import { useTranslation } from "react-i18next"
+import SEO from "../components/seo"
 
 const ProjectsPage = () => 
 {
@@ -10,6 +11,7 @@ const ProjectsPage = () =>
 
   return (
     <Layout activePage="projects" >
+    <SEO />
       <Heading>{t('project_header')}</Heading>
       <p className="text-tertiary">{t('project_subheader')}</p>
 
