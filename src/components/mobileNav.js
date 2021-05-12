@@ -61,14 +61,15 @@ const MobileNav = () => {
             <div className="flex-grow">
               <Link to="/">HOME</Link>
             </div>
-            <div className="flex-grow">
-              <Link to="https://blog.ericturner.it">BLOG</Link>
-            </div>
+            
             <div className="flex-grow">
               <Link to="/projects">PROJECTS</Link>
             </div>
             <div className="flex-grow">
-              <Link to="/about">ABOUT</Link>
+              <a href="https://blog.ericturner.it">TECH BLOG</a>
+            </div>
+            <div className="flex-grow">
+              <a href="https://italiano.ericturner.it">ITALIAN BLOG</a>
             </div>
             <ThemeToggle />
           </nav>
