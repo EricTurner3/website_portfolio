@@ -15,5 +15,5 @@ Framework & Resources
 
 Inspiration
 ===
-* jeffjadulco.com - Dark mode / light mode, avatar blob idea, project grid
+* jeffjadulco.com - Dark mode / light mode, project grid
 * [Freelancer Landing Page // Dribbble.com](https://dribbble.com/shots/15319926-Freelancer-Landing-Page) - hero
