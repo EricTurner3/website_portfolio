@@ -18,8 +18,8 @@ const Header = ({ activePage }) => {
 
           <NavLink to="/" title="Home" selected={activePage === "/"}>{t("home")}</NavLink>
           <NavLink to="/projects" title="Projects" selected={activePage === "projects"}>{t("projects")}</NavLink>
-          <a href="https://blog.ericturner.it" target="_blank" rel="noreferrer" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_tech")}</a>
-          <a href="https://italiano.ericturner.it" target="_blank" rel="noreferrer" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_it")}</a>
+          <a href="https://blog.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_tech")}</a>
+          <a href="https://italiano.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_it")}</a>
           
         </span>
         <a href={ (i18n.language === 'en' ? 'it/' : '/') + (activePage === '/' ? '' : activePage)} title={t("switch")}>{i18n.language} </a>
