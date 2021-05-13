@@ -2,14 +2,14 @@ const data_me = {
     "en": [{
         name: "ERIC TURNER",
         jobtitle: "Integration Developer",
-        desc: "As an Integration Developer, I create applications and experiences to connect multiple existing systems together into one hub for ease-of-use and efficiency. I discovered my passion for full-stack development in college and I realized I loved creating experiences from the ground up to increase efficiency and data integrity across the board. I was given an excellent employment opportunity at my former school district to really let my talents and creativity shine.",
+        desc: "I am a talented integration developer with almost 5 years of experience. I enjoy creating custom workflows to integrate different types of data, as well as pairing that data with beautiful applications to help digest. I am familiar with many languages and stacks: Python, MySQL, SQL Server, SSIS, PHP MVC, React, & Wordpress.",
         cta_resume: "My Résumé",
         cta_contact: "Contact Me"
     }],
     "it": [{
         name: "ERIC TURNER",
         jobtitle: "Sviluppatore Integrazione",
-        desc: "As an Integration Developer, I create applications and experiences to connect multiple existing systems together into one hub for ease-of-use and efficiency. I discovered my passion for full-stack development in college and I realized I loved creating experiences from the ground up to increase efficiency and data integrity across the board. I was given an excellent employment opportunity at my former school district to really let my talents and creativity shine.",
+        desc: "Sono uno sviluppatore di integrazione di talento con quasi 5 anni di esperienza. Mi piace creare flussi di lavoro personalizzati per integrare diversi tipi di dati, così come accoppiare quei dati con belle applicazioni per aiutare a digerire. Ho familiarità con molti linguaggi e stack: Python, MySQL, SQL Server, SSIS, PHP MVC, React e Wordpress.",
         cta_resume: "Curriculum Vitae",
         cta_contact: "Contattami"
     }]
