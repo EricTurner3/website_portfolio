@@ -131,14 +131,14 @@ const data_projects = {
             description: "One of my volunteer projects, I worked on the initial construction of the PDAP Django app which is used for displaying agencies and status for US Police Agencies!",
             year: "2021",
             links: [
-            {
-                label: "PDAP GitHub",
-                url: "https://github.com/Police-Data-Accessibility-Project/PDAP-app",
-            },
-            {
-                label: "My GitHub",
-                url: "https://github.com/EricTurner3/pdap-intake-ui",
-            }
+                {
+                    label: "PDAP GitHub",
+                    url: "https://github.com/Police-Data-Accessibility-Project/PDAP-app",
+                },
+                {
+                    label: "My GitHub",
+                    url: "https://github.com/EricTurner3/pdap-intake-ui",
+                }
             ],
         },
         {
@@ -149,11 +149,34 @@ const data_projects = {
             description: "For the same org, I also was one of the contributers for some scrapers (CityProtect) and the main contributor for an automated ETL process for loading data into DoltHub!",
             year: "2021",
             links: [
-            {
-                label: "GitHub",
-                url: "https://github.com/Police-Data-Accessibility-Project/PDAP-Scrapers",
-            }
+                {
+                    label: "GitHub",
+                    url: "https://github.com/Police-Data-Accessibility-Project/PDAP-Scrapers",
+                }
             ],
+        },
+        {
+            title: "Laravel + React Devops Showcase",
+            types:[
+                {label: "PHP"}, {label: "React"}, {label: "DevOps"}
+            ],
+            description: "This project was a fantastic learning experience for me! I learned how to use composer, php artisan & git command line tools; Jest + enzyme for React component unit-testing; PHPUnit for Laravel API unit-testing; GitHub Actions to build a custom pipeline and push a release!",
+            year: "2021",
+            links: [
+                {
+                    label: "GitHub Release",
+                    url: "https://github.com/EricTurner3/react-devops-showcase/releases/tag/v1-alpha",
+                },
+                {
+                    label: "GitHub Repo",
+                    url: "https://github.com/EricTurner3/react-devops-showcase/",
+                },
+                {
+                    label: "Blog Writeups",
+                    url: "https://blog.ericturner.it/category/projects/react-devops-showcase/",
+                }
+            ],
+            
         }
     ],
     "it":[
@@ -304,11 +327,34 @@ const data_projects = {
             description: "Per la stessa organizzazione, sono stato anche uno dei collaboratori per alcuni scrapers (CityProtect) e il principale collaboratore per un processo ETL automatizzato per caricare i dati in DoltHub!",
             year: "2021",
             links: [
-            {
-                label: "GitHub",
-                url: "https://github.com/Police-Data-Accessibility-Project/PDAP-Scrapers",
-            }
+                {
+                    label: "GitHub",
+                    url: "https://github.com/Police-Data-Accessibility-Project/PDAP-Scrapers",
+                }   
             ],
+        },
+        {
+            title: "Vetrina di Laravel + React Devops",
+            types:[
+                {label: "PHP"}, {label: "React"}, {label: "DevOps"}
+            ],
+            description: "Questo progetto è stato una fantastica esperienza di apprendimento per me! Ho imparato ad usare composer, php artisan e git; Jest + enzyme per il test unitario dei componenti di React; PHPUnit per il test unitario delle API di Laravel; GitHub Actions per costruire una pipeline personalizzata e spingere un rilascio!",
+            year: "2021",
+            links: [
+                {
+                    label: "Rilascio su GitHub",
+                    url: "https://github.com/EricTurner3/react-devops-showcase/releases/tag/v1-alpha",
+                },
+                {
+                    label: "Repo di GitHub",
+                    url: "https://github.com/EricTurner3/react-devops-showcase/",
+                },
+                {
+                    label: "Post del Blog",
+                    url: "https://blog.ericturner.it/category/projects/react-devops-showcase/",
+                }
+            ],
+            
         }
     ]
 }
