@@ -131,12 +131,12 @@ const data_skills = {
                 }
             },
             {
-                "name": "React",
+                "name": "Gatsby.JS + React",
                 "color": "primary",
                 "level": 1,
                 "desc": {
-                    "en": "React is an industry-leading UI framework, it is one of my focuses for 2021.",
-                    "it": "React è un framework leader del settore, è uno dei miei nuovi obiettivi per il 2021."
+                    "en": "Gatsby.JS is a fantastic static site framework, it works with React: an industry-leading UI framework, both are new technologies I am adding to my stack!",
+                    "it": "Gatsby.JS è un fantastico static site framework, funziona con React: un framework UI leader del settore, entrambe sono nuove tecnologie che sto aggiungendo al mio stack!"
                 }
             },
             {
