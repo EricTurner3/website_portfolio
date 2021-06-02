@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: [
@@ -7,7 +9,9 @@ module.exports = {
       "./src/**/*.tsx",
     ],
     options: {
-      whitelist: ["ml-3"], // ml-3 for toc depth
+      safelist: ["ml-3",
+      "bg-green-400", "bg-blue-400", "bg-red-400", "bg-blue-500", "bg-yellow-400", "bg-blue-300", "bg-pink-300", "bg-purple-500", "bg-yellow-500", "bg-purple-400", "bg-yellow-200", "text-green-400", "text-blue-400", "text-red-400", "text-blue-500", "text-yellow-400", "text-blue-300", "text-pink-300", "text-purple-500", "text-yellow-500", "text-purple-400", "text-yellow-200"
+      ], // ml-3 for toc depth // colors were generated from a function in /src/utils/colors
     },
   },
   theme: {
@@ -121,6 +125,17 @@ module.exports = {
         },
       },
     },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      gray: colors.trueGray,
+      red: colors.red,
+      blue: colors.lightBlue,
+      yellow: colors.amber,
+      purple: colors.purple,
+      pink: colors.pink,
+      green: colors.emerald
+    }
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],

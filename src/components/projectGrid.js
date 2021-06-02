@@ -1,5 +1,6 @@
 import React from "react"
-import projects from "../data/projects"
+import data_projects from "../data/projects"
+import data_skills from "../data/skills"
 import { ProjectLink, ProjectPill } from "./component"
 import { useTranslation } from "react-i18next"
 
@@ -8,7 +9,7 @@ const ProjectGrid = _ => {
   return (
     <section className="mb-5 ml-5 mr-5">
       <ul className="mt-3 -mx-5 grid md:grid-cols-2 gap-6 md:gap-6">
-        {projects[i18n.language].map(project => {
+        {data_projects.map(project => {
           return (
             <li
               key={project.title}
@@ -20,16 +21,17 @@ const ProjectGrid = _ => {
                       {project.title}
                   </h3>
                   <span className="flex items-center justify-start space-x-4 ">
-                    {project.types.map(type => {
+                    {project.skills.map(one_skill => {
                       return (
                         <ProjectPill
-                          label={type.label}
+                          label={data_skills[one_skill].name}
+                          pillColor={"bg-" + data_skills[one_skill].color}
                         />
                       )
                     })}
                   </span>
                   <h4 className="font-base text-tertiary pr-3">
-                    {project.description}
+                    {project.description[i18n.language]}
                   </h4>
                   <div className="flex items-center justify-start space-x-4 absolute bottom-0 mb-5">
                     {project.links.map(link => {

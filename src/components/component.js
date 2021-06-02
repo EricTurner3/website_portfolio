@@ -91,20 +91,33 @@ export const ProjectLink = ({ label, url }) => {
   )
 }
 
-export const ProjectPill = ({ label }) => {
-  var pillColor;
-
-  switch (label) {
-    case 'Web': pillColor = 'bg-blue-300'; break;
-    case 'Python': pillColor = 'bg-green-400'; break;
-    case 'Automotive': pillColor = 'bg-red-300'; break;
-    case 'Cybersecurity': pillColor = 'bg-yellow-500'; break;
-    default: pillColor = 'bg-primary'; break;
-  }
+export const ProjectPill = ({ label, pillColor }) => {
 
   return (
     <span className={"text-xs text-primary rounded-full py-1 px-3 mb-2 mt-1 " + pillColor}>
         {label}
+    </span>
+  )
+}
+// level 1-3 ; lang = en or it ; pt (padding top)
+export const SkillPill = ({ level, lang, pt = "py-1" }) => {
+  var pillColor;
+  var level_txt;
+
+  if (lang === 'en') {
+      if (level === 1){level_txt = 'Beginner'; pillColor = 'bg-green-400';} 
+      else if (level === 2){level_txt = 'Intermediate'; pillColor = 'bg-yellow-500';} 
+      else if (level === 3){level_txt = 'Advanced'; pillColor = 'bg-red-500';} 
+  }
+  else if (lang === 'it'){
+      if (level === 1){level_txt = 'Principiante'; pillColor = 'bg-green-400';} 
+      else if (level === 2){level_txt = 'Intermedio'; pillColor = 'bg-yellow-500';} 
+      else if (level === 3){level_txt = 'Avanzato'; pillColor = 'bg-red-500';} 
+  }
+
+  return (
+    <span className={"text-xs text-primary rounded-full px-3 mb-2 mt-1 " + pillColor+ " " + pt}>
+        {level_txt}
     </span>
   )
 }

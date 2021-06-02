@@ -61,9 +61,11 @@ const MobileNav = () => {
             <div className="flex-grow">
               <Link to="/">HOME</Link>
             </div>
-            
             <div className="flex-grow">
               <Link to="/projects">PROJECTS</Link>
+            </div>
+            <div className="flex-grow">
+              <Link to="/skills">SKILLS</Link>
             </div>
             <div className="flex-grow">
               <a href="https://blog.ericturner.it">TECH BLOG</a>

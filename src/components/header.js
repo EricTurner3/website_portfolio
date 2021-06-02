@@ -18,6 +18,7 @@ const Header = ({ activePage }) => {
 
           <NavLink to="/" title="Home" selected={activePage === "/"}>{t("home")}</NavLink>
           <NavLink to="/projects" title="Projects" selected={activePage === "projects"}>{t("projects")}</NavLink>
+          <NavLink to="/skills" title="Skills" selected={activePage === "skills"}>{t("skills")}</NavLink>
           <a href="https://blog.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_tech")}</a>
           <a href="https://italiano.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_it")}</a>
           
