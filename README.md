@@ -17,3 +17,9 @@ Inspiration
 ===
 * jeffjadulco.com - Dark mode / light mode, project grid
 * [Freelancer Landing Page // Dribbble.com](https://dribbble.com/shots/15319926-Freelancer-Landing-Page) - hero
+
+Notes for Future Me
+===
+After making any changes, run the production command then copy files over the FTP. Preview any changes with the dev command.
+* Dev Mode: `npm run develop`
+* Production: `npm run build`

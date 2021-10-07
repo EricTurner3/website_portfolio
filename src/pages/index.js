@@ -2,6 +2,7 @@ import React from "react"
 import { LaptopBackground, Button } from "../components/component"
 import Layout from "../components/layout"
 import Avatar from "../components/image"
+import { StaticImage } from "gatsby-plugin-image"
 import Experience from "../components/experience"
 import { useTranslation } from "react-i18next"
 import data_me from "../data/intro.js"
@@ -22,6 +23,32 @@ const IndexPage = () => {
                 </h1>
                 <p className="text-xl mt-2 mb-2 text-fill-primary sm:text-left md:text-center lg:text-left">
                   {me.jobtitle}
+                </p>
+                <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
+                  <StaticImage
+                    className="m-2"
+                    src="../images/security.png" 
+                    alt="CompTIA Security+ ce"
+                    placeholder="blurred"
+                    width="60"
+                    layout="constrained"
+                  />
+                  <StaticImage
+                    className="m-2"
+                    src="../images/pentest.png" 
+                    alt="CompTIA PenTest+ ce"
+                    placeholder="blurred"
+                    width="60"
+                    layout="constrained"
+                  />
+                  <StaticImage
+                    className="m-2"
+                    src="../images/cnvp.png" 
+                    alt="CompTIA Network Vulnerability Assessment Professional (CNVP)"
+                    placeholder="blurred"
+                    width="59"
+                    layout="constrained"
+                  />
                 </p>
                 <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
                   {me.desc}

@@ -94,17 +94,25 @@ const data_projects = [
         ],
     },
     {
-        title: "TryHackMe Writeups",
+        title: "Pentesting CTF",
         skills:['cybersecurity'],
         description: {
-            "en": "I have completed several rooms on TryHackMe for pentesting and you can find those writeups on my blog",
-            "it": "Ho completato diverse stanze su TryHackMe! Potete trovare quegli scritti qui",
+            "en": "I am active on both TryHackMe and HackTheBox and have done many CTF challenges!",
+            "it": "Sono attivo sia su TryHackMe che su HackTheBox e ho fatto molte sfide CTF!",
         },
         year: "2021",
         links: [
         {
             label: "Blog Posts",
-            url: "https://blog.ericturner.it/category/tryhackme/",
+            url: "https://blog.ericturner.it/category/cybersecurity-hacking/",
+        },
+        {
+            label: "TryHackMe",
+            url: "https://tryhackme.com/p/cyberic",
+        },
+        {
+            label: "HackTheBox",
+            url: "https://app.hackthebox.eu/profile/677503",
         }
         ],
     },
@@ -180,6 +188,21 @@ const data_projects = [
             }
         ],
         
+    },
+    {
+        title: "Crime Analysis",
+        skills:['python', 'data-analytics'],
+        description: {
+            "en": "Crime & Intelligence Analysis using and GIS, Python, Excel",
+            "it":"Analisi del crimine e dell'intelligence utilizzando e GIS, Python, Excel",
+        },
+        year: "2021",
+        links: [
+            {
+                label: "GitHub",
+                url: "https://github.com/EricTurner3/CrimeAnalysis",
+            }
+        ],
     }
 ]
     

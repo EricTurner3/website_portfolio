@@ -69,6 +69,45 @@ const data_skills = {
             }
         ]   
     },
+    "data-analytics":{
+        "name": "Data Analytics",
+        "color": "blue-300",
+        "icon": "fa fa-database",
+        "level": 3,
+        "desc": {
+            "en": "Data analytics is a broad category that uses a variety of skills for harvesting, cleaning, manipulating, and modeling data",
+            "it": "Analisi dei dati è una categoria ampia che utilizza una varietà di competenze per raccogliere, pulire, manipolare e modellare i dati"
+        },
+        "subskills":[
+            {
+                "name": "Cleaning and Manipulation",
+                "color": "primary",
+                "level": 3,
+                "desc": {
+                    "en": "Python, SQL and Excel come in handy to help clean data to get meaningful results",
+                    "it": "Python, SQL ed Excel sono utili per aiutare a pulire i dati per ottenere risultati significativi"
+                }
+            },
+            {
+                "name": "Graphing and Reporting",
+                "color": "primary",
+                "level": 3,
+                "desc": {
+                    "en": "Metabase, Excel, Tableau, and GIS Software are great for displaying visualizations from data",
+                    "it": "Metabase, Excel, Tableau e il software GIS sono ottimi per visualizzare i dati"
+                }
+            },
+            {
+                "name": "GIS",
+                "color": "primary",
+                "level": 1,
+                "desc": {
+                    "en": "I am familiar with QGIS and ArcGIS Online and I am continuing to gain more knowledge in GIS for data analysis",
+                    "it": "Ho familiarità con QGIS e ArcGIS Online e sto continuando ad acquisire maggiori conoscenze in GIS per l'analisi dei dati."
+                }
+            }
+        ]   
+    },
     "html5":{
         "name": "HTML5",
         "color": "red-400",

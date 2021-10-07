@@ -2,8 +2,8 @@ import React from "react"
 import ShowMoreText from 'react-show-more-text'
 
 import { OfficeBuildingIcon, LocationMarkerIcon } from '@heroicons/react/outline'
-
 import { LocalizedLink } from "gatsby-theme-i18n"
+
 
 export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   const textColor = selected ? "text-accent" : "text-secondary"
@@ -213,4 +213,5 @@ export const LaptopBackground = _ => {
     </div>
   )
 }
+
 
