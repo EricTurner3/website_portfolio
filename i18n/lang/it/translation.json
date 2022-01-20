@@ -5,9 +5,10 @@
     "blog_tech": "Blog di Tech (en)",
     "blog_it": "Blog di Italiano",
     "switch": "Switch to EN",
-    "experience": "Esperienza",
+    "education": "Educazione",
+    "professional_experience": "Esperienza professionale",
     "project_header": "Vetrina dei Progetti",
-    "project_subheader": "Alcuni dei miei progetti più notevoli!",
+    "project_subheader": "Alcuni progetti su cui ho lavorato con le loro competenze associate. I progetti più recenti sono in cima.",
     "footer-reserved": "Tutti i diritti riservati",
     "footer-icons":"icone fornite da flaticon"
 }

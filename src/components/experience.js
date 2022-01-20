@@ -9,40 +9,36 @@ export const Experience = () => {
   return (
     <div className="mt-32 full-width-container bg-secondary">
       <div className="container mx-auto pt-16">
-        <h1 className="text-3xl font-semibold text-center text-primary">
-          {t('experience')}
-        </h1>
-        
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 container">
-        <div className="bg-primary rounded-lg m-5 p-5">
+        <div >
+        <h1 className="text-3xl font-semibold text-center text-secondary">
+          {t('education')}
+        </h1>
             <ul>
-              {data_education[i18n.language].map(work => {
+              {data_education[i18n.language].map(edu => {
                 return (
                   <ExperienceBlock
                     icon      = ''
-                    title     = {work.title}
-                    start     = {work.start}
-                    end       = {work.end}
-                    org       = {work.org}
-                    location  = {work.location}
-                    info      = {work.info}
+                    org       = {edu.org}
+                    location  = {edu.location}
+                    subitems  = {edu.items}
                   />
                 )
               })}
             </ul>
           </div>
-          <div className="bg-primary rounded-lg m-5 p-5">
+          <div >
+          <h1 className="text-3xl font-semibold text-center text-secondary">
+          {t('professional_experience')}
+          </h1>
             <ul>
             {data_work[i18n.language].map(work => {
               return (
                 <ExperienceBlock
-                  icon      = ''
-                  title     = {work.title}
-                  start     = {work.start}
-                  end       = {work.end}
-                  org       = {work.org}
-                  location  = {work.location}
-                  info      = {work.info}
+                    icon      = ''
+                    org       = {work.org}
+                    location  = {work.location}
+                    subitems  = {work.items}
                 />
               )
             })}

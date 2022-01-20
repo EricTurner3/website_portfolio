@@ -200,3 +200,7 @@ aside.sticky {
   background-size: 200%;
   transition: background-position 0.5s ease-out;
 }
+
+.inline-svg-icon svg{
+  display: inline
+}

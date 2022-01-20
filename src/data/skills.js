@@ -30,260 +30,41 @@ const data_skills = {
             }
         ]   
     },
-    "php":{
-        "name": "PHP",
+    "web_dev":{
+        "name": "Web Development",
         "color": "blue-400",
         "icon": "fab fa-php",
         "level": 3,
         "desc": {
-            "en": "PHP is my preferred back-end web language!",
-            "it": "PHP è il mio linguaggio web back-end preferito!"
+            "en": "My current occupation started out as a full-stack web developer, before transitioning more into data integrations.",
+            "it": "La mia attuale occupazione è iniziata come sviluppatore web full-stack, prima di passare più alle integrazioni di dati."
         },
         "subskills":[
             {
-                "name": "Model-View-Controller Architecture",
+                "name": "PHP",
                 "color": "primary",
                 "level": 3,
                 "desc": {
-                    "en": "Since college, I have used a custom MVC framework in developing many of my web applications.",
-                    "it": "Fin dal college, ho usato un framework MVC personalizzato nello sviluppo di molte delle mie applicazioni web."
+                    "en": "I graduated from IUPUI with a certificate in Web Development which had a heavy focus on Advanced PHP Development.",
+                    "it": "Mi sono laureato alla IUPUI con un certificato in sviluppo web che si concentrava molto sullo sviluppo PHP avanzato."
                 }
             },
             {
-                "name": "Laravel",
+                "name": "HTML5 / CSS / JS",
                 "color": "primary",
-                "level": 1,
+                "level": 3,
                 "desc": {
-                    "en": "Laravel is an industry-leading PHP framework that I have worked with in a learning capacity.",
-                    "it": "Laravel è un framework PHP leader del settore con il quale ho lavorato in una capacità di apprendimento."
+                    "en": "I haven't settled on a particular front-end yet, but I still am great with the original languages.",
+                    "it": "Non ho ancora deciso su un front-end particolare, ma sono ancora grande con le lingue originali."
                 }
             },
             {
-                "name": "Composer",
+                "name": "Gatsby.js",
                 "color": "primary",
                 "level": 2,
                 "desc": {
-                    "en": "Composer is a great tool in managing dependencies for PHP projects",
-                    "it": "Composer è un grande strumento nella gestione delle dipendenze per i progetti PHP."
-                }
-            }
-        ]   
-    },
-    "data-analytics":{
-        "name": "Data Analytics",
-        "color": "blue-300",
-        "icon": "fa fa-database",
-        "level": 3,
-        "desc": {
-            "en": "Data analytics is a broad category that uses a variety of skills for harvesting, cleaning, manipulating, and modeling data",
-            "it": "Analisi dei dati è una categoria ampia che utilizza una varietà di competenze per raccogliere, pulire, manipolare e modellare i dati"
-        },
-        "subskills":[
-            {
-                "name": "Cleaning and Manipulation",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "Python, SQL and Excel come in handy to help clean data to get meaningful results",
-                    "it": "Python, SQL ed Excel sono utili per aiutare a pulire i dati per ottenere risultati significativi"
-                }
-            },
-            {
-                "name": "Graphing and Reporting",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "Metabase, Excel, Tableau, and GIS Software are great for displaying visualizations from data",
-                    "it": "Metabase, Excel, Tableau e il software GIS sono ottimi per visualizzare i dati"
-                }
-            },
-            {
-                "name": "GIS",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "I am familiar with QGIS and ArcGIS Online and I am continuing to gain more knowledge in GIS for data analysis",
-                    "it": "Ho familiarità con QGIS e ArcGIS Online e sto continuando ad acquisire maggiori conoscenze in GIS per l'analisi dei dati."
-                }
-            }
-        ]   
-    },
-    "html5":{
-        "name": "HTML5",
-        "color": "red-400",
-        "icon": "fab fa-html5",
-        "level": 3,
-        "desc": {
-            "en": "HTML5 is the current foundation of the web today",
-            "it": "HTML5 è la base attuale del web oggi"
-        },
-        "subskills":[
-            {
-                "name": "Bootstrap",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "I am a huge fan of the Bootstrap framework for a fast start to a new site.",
-                    "it": "Sono un grande fan del framework Bootstrap per un inizio veloce di un nuovo sito."
-                }
-            },
-        ]   
-    },
-    "css":{
-        "name": "CSS",
-        "color": "blue-500",
-        "icon": "fab fa-css3-alt",
-        "level": 3,
-        "desc": {
-            "en": "CSS is the makeup palette of the web.",
-            "it": "I CSS sono la tavolozza di trucco del web."
-        },
-        "subskills":[
-            {
-                "name": "Tailwind CSS",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "I love using Tailwind CSS, it is chocked full of features to get off the ground quickly!",
-                    "it": "Mi piace usare Tailwind CSS, è pieno di funzioni per partire rapidamente!"
-                }
-            },
-        ]   
-    },
-    "js":{
-        "name": "JavaScript",
-        "color": "yellow-400",
-        "icon": "fab fa-js",
-        "level": 3,
-        "desc": {
-            "en": "Javascript is a robust web language with amazing capabilities.",
-            "it": "Javascript è un linguaggio web robusto con capacità sorprendenti."
-        },
-        "subskills":[
-            {
-                "name": "jQuery",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "jQuery is an amazing framework with lots of extensibility.",
-                    "it": "jQuery è un framework incredibile con un sacco di estensibilità."
-                }
-            },
-            {
-                "name": "Gatsby.JS + React",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "Gatsby.JS is a fantastic static site framework, it works with React: an industry-leading UI framework, both are new technologies I am adding to my stack!",
-                    "it": "Gatsby.JS è un fantastico static site framework, funziona con React: un framework UI leader del settore, entrambe sono nuove tecnologie che sto aggiungendo al mio stack!"
-                }
-            },
-            {
-                "name": "Node.JS",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "I have a little experience with using Node.JS, mostly for chatbots.",
-                    "it": "Ho un po' di esperienza nell'uso di Node.JS, soprattutto per i chatbot."
-                }
-            }
-        ]   
-    },
-    "testing":{
-        "name": "Unit Testing",
-        "color": "blue-300",
-        "icon": "fas fa-vial",
-        "level": 1,
-        "desc": {
-            "en": "Unit Testing is very important in a larger-scale program to ensure everything works properly.",
-            "it": "I test unitari sono molto importanti in un programma su larga scala per assicurare che tutto funzioni correttamente."
-        },
-        "subskills":[
-            {
-                "name": "Jest + Enzyme",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "A solid combination of tools for testing React components",
-                    "it": "Una solida combinazione di strumenti per testare i componenti React"
-                }
-            },
-            {
-                "name": "PHPUnit",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "Probably the most popular PHP testing suite available.",
-                    "it": "Probabilmente la più popolare suite di test PHP disponibile."
-                }
-            },
-            {
-                "name": "PyTest",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "One of the best python testing frameworks.",
-                    "it": "Uno dei migliori framework di test in python."
-                }
-            }
-        ]   
-    },
-    "dev-ops":{
-        "name": "DevOps",
-        "color": "pink-300",
-        "icon": "fas fa-code",
-        "level": 1,
-        "desc": {
-            "en": "A set of practices that revolutionizes the development process.",
-            "it": "Un insieme di pratiche che rivoluziona il processo di sviluppo."
-        },
-        "subskills":[
-            {
-                "name": "CI / CD",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "Continous Integration / Continous Deployment is a pipeline that allows automation, integration, testing and deployment of apps.",
-                    "it": "Continous Integration / Continous Deployment è una pipeline che permette di automatizzare, integrare, testare e distribuire le app."
-                }
-            },
-            {
-                "name": "GitHub Actions",
-                "color": "primary",
-                "level": 1,
-                "desc": {
-                    "en": "I've been using GitHub Actions for building a pipeline with DevOps practices in mind",
-                    "it": "Ho usato GitHub Actions per costruire una pipeline con pratiche DevOps in mente"
-                }
-            }
-        ]   
-    },
-    "sc":{
-        "name": "Source Control",
-        "color": "purple-500",
-        "icon": "fas fa-code-branch",
-        "level": 3,
-        "desc": {
-            "en": "Unit Testing is the bread and butter of the dev-ops toolkit. It is one of my main focuses for 2021!",
-            "it": "I test unitari sono il pane e il burro del toolkit dev-ops. È uno dei miei obiettivi principali per il 2021!"
-        },
-        "subskills":[
-            {
-                "name": "Git + GitHub",
-                "color": "primary",
-                "level": 3,
-                "desc": {
-                    "en": "My favorite of the source control systems, the command line is powerful and the web interface makes it easy to navigate repositories!",
-                    "it": "Il mio preferito tra i sistemi di controllo dei sorgenti, la linea di comando è potente e l'interfaccia web rende facile la navigazione dei repository!"
-                }
-            },
-            {
-                "name": "Azure DevOps",
-                "color": "primary",
-                "level": 2,
-                "desc": {
-                    "en": "For work, I launched a custom DevOps server for our built applications.",
-                    "it": "Per lavoro, ho lanciato un server DevOps personalizzato per le nostre applicazioni costruite."
+                    "en": "This website! I learned this new framework in 2021 to expand my horizons.",
+                    "it": "Questo sito web! Ho imparato questa nuova struttura nel 2021 per espandere i miei orizzonti."
                 }
             }
         ]   
@@ -299,21 +80,21 @@ const data_skills = {
         },
         "subskills":[
             {
-                "name": "Automotive CANBus",
+                "name": "Malware Analysis",
                 "color": "primary",
                 "level": 1,
                 "desc": {
-                    "en": "The CANBus is a networking protocol in which the automobile communicates to all of it's modules. It is one of my side projects to hack into the CANBus and read/write custom commands.",
-                    "it": "Il CANBus è un protocollo di rete in cui l'automobile comunica con tutti i suoi moduli. È uno dei miei progetti collaterali per entrare nel CANBus e leggere/scrivere comandi personalizzati."
+                    "en": "Starting Dec 2021, I have setup a malware analysis lab and began to dissect and report on indicators of compromise for malware.",
+                    "it": "A partire dal dicembre 2021, ho impostato un laboratorio di analisi del malware e ho iniziato a sezionare e segnalare gli indicatori di compromissione del malware."
                 }
             },
             {
-                "name": "TryHackMe",
+                "name": "Penetration Testing",
                 "color": "primary",
                 "level": 2,
                 "desc": {
-                    "en": "I have been using TryHackMe for experience in Privilege Escalation, Cryptography, Exploitation, Web Hacking and more. I have completed two certificates with them.",
-                    "it": "Ho usato TryHackMe per fare esperienza in Privilege Escalation, Crittografia, Exploitation, Web Hacking e altro. Ho completato due certificati con loro."
+                    "en": "I am active on both TryHackMe and HackTheBox for experience in penetration testing and vulnerability scanning on simulated virtual machines.",
+                    "it": "Sono attivo sia su TryHackMe che su HackTheBox per l'esperienza nei test di penetrazione e nella scansione delle vulnerabilità su macchine virtuali simulate."
                 }
             }
         ]   
@@ -352,7 +133,7 @@ const data_skills = {
         "name": "Language",
         "color": "green-400",
         "icon": "fas fa-language",
-        "level": 2,
+        "level": 1,
         "desc": {
             "en": "Learning a new language is a beautiful and thrilling experience that connects you to an entirely new set of people and cultures.",
             "it": "Imparare una nuova lingua è un'esperienza bella ed emozionante che ti connette a un insieme completamente nuovo di persone e culture."
@@ -361,7 +142,7 @@ const data_skills = {
             {
                 "name": "Italian",
                 "color": "primary",
-                "level": 2,
+                "level": 1,
                 "desc": {
                     "en": "I have been learning Italian for the past few years! I am at a conversational level, with more proficiency towards reading / writing.",
                     "it": "Sto imparando l'italiano negli ultimi anni. Sono ad un livello di conversazione, con più competenza verso la lettura/scrittura."

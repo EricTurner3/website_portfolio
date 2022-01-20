@@ -1,7 +1,5 @@
 import React from "react"
-import ShowMoreText from 'react-show-more-text'
 
-import { OfficeBuildingIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 import { LocalizedLink } from "gatsby-theme-i18n"
 
 
@@ -15,36 +13,44 @@ export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   )
 }
 
-export const ExperienceBlock = ({ icon, title, start, end, org, location, info }) => {
-    return (
-      <li>
+export const ExperienceBlock = ({ icon, org, location, subitems }) => {
+  return(
+    <li className="bg-primary rounded-lg m-5 p-5">
         <div className="mb-5">
-          <p className = "text-tertiary text-sm">{start} - {end}</p>
-          <p className="text-primary font-bold text-lg">{title}</p>
-          <div className="ml-5">
-            <div className="flex align-middle"><i className="self-center"><OfficeBuildingIcon className="w-4 text-tertiary"/></i><span className="text-medium sm:text-xs">{" "}{org}</span></div>
-            <div className="flex align-middle"><i className="self-center"><LocationMarkerIcon className="w-4 text-tertiary"/></i><span className="text-medium sm:text-xs">{" "}{location}</span></div>
-            <p className="mt-2 text-tertiary">
-              <ShowMoreText
-                  /* Default options */
-                  lines={1}
-                  more='View Info'
-                  less='Hide Info'
-                  className=''
-                  anchorClass='text-accent'
-                  onClick=""
-                  expanded={false}
-                  width={0}
-              >
-                  {info} 
-              </ShowMoreText>
-            </p>
+          <div className="flex justify-between">
+            <p className="text-primary font-bold text-lg">{org}</p>
+            <p className="text-tertiary text-md">{location}</p>
+          </div>
+          <hr style={{borderColor: 'var(--color-text-tertiary)'}} />
+          <div className="pl-3">
+            {subitems.map(item => {
+              return(
+                  <li>
+                    <div className="mb-5">
+                      <div className="flex justify-between">
+                        <p className="text-secondary font-bold text-md">{item.title}</p>
+                        <p className = "text-tertiary text-sm">{item.start} - {item.end}</p>
+                      </div>
+                      <div className="ml-5">
+                        
+                        <ul className="mt-2 text-tertiary pl-3" style={{listStyle: 'circle'}}>
+                          {item.info.map(i => {
+                            return (
+                              <li>{i}</li>
+                            )
+                          })} 
+                        </ul>
+                      </div>
+                      </div>
+                  </li>
+              )
+              })
+            }
           </div>
           
-        </div>
-          
-      </li>
-    )
+          </div>
+    </li>
+  )
 }
 
 export const ExtLink = ({ children, link, newTab }) => {

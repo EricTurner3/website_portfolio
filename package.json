@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "description": "My Portfolio - ericturner.it",
   "author": "Eric Turner",
@@ -34,6 +34,7 @@
     "postcss": "^8.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.8.15",
     "react-show-more-text": "^1.4.6",

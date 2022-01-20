@@ -7,6 +7,7 @@ import Experience from "../components/experience"
 import { useTranslation } from "react-i18next"
 import data_me from "../data/intro.js"
 import Seo from "../components/seo"
+import { GitHub, Linkedin  } from 'react-feather'
 
 const IndexPage = () => {
   const { i18n } = useTranslation()
@@ -54,7 +55,9 @@ const IndexPage = () => {
                   {me.desc}
                 </p> <br />
                 <Button link={'/resume.pdf'}><span role="img" aria-label="paper">📃 </span>{me.cta_resume}</Button> {" "}
-                <Button link="mailto:me@ericturner.it"><span role="img" aria-label="wave">👋 </span>{me.cta_contact}</Button>
+                <Button link="mailto:me@ericturner.it"><span role="img" aria-label="wave">👋 </span>{me.cta_contact}</Button> {" "}
+                <Button link='https://linkedin.com/in/ericturner31'><span className="inline-svg-icon"><Linkedin size={18}/></span>{" "}LinkedIn</Button> {" "}
+                <Button link='https://github.com/EricTurner3'><span className="inline-svg-icon"><GitHub  size={18}/></span>{" "}GitHub</Button>
               </div>
             )
           })}

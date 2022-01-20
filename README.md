@@ -9,7 +9,8 @@ Framework & Resources
 * [Tailwind CSS](https://tailwindcss.com/) - Front end CSS framework that ties in with React, also includes Inter font
 * [Blobmaker.app](https://www.blobmaker.app/) - Randomly generated blob that goes behind my avatar
 * [React Chrono](https://github.com/prabhuignoto/react-chrono) - Vertical timeline plugin for React
-* [Flat Icon](https://flaticon/com) - Sun & Moon SVG icons for light/dark mode
+* [Flat Icon](https://flaticon.com) - Sun & Moon SVG icons for light/dark mode
+* [Feather](https://feathericons.com/) - (react-feather) Social Icons 
 * [Bitmoji](https://bitmoji.com) - avatar generation
 
 
