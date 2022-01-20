@@ -54,9 +54,9 @@ const IndexPage = () => {
                 <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
                   {me.desc}
                 </p> <br />
-                <Button link={'/resume.pdf'}><span role="img" aria-label="paper">📃 </span>{me.cta_resume}</Button> {" "}
-                <Button link="mailto:me@ericturner.it"><span role="img" aria-label="wave">👋 </span>{me.cta_contact}</Button> {" "}
-                <Button link='https://linkedin.com/in/ericturner31'><span className="inline-svg-icon"><Linkedin size={18}/></span>{" "}LinkedIn</Button> {" "}
+                <Button link={'/resume.pdf'}><span role="img" aria-label="paper">📃 </span>{me.cta_resume}</Button>
+                <Button link="mailto:me@ericturner.it"><span role="img" aria-label="wave">👋 </span>{me.cta_contact}</Button>
+                <Button link='https://linkedin.com/in/ericturner31'><span className="inline-svg-icon"><Linkedin size={18}/></span>{" "}LinkedIn</Button>
                 <Button link='https://github.com/EricTurner3'><span className="inline-svg-icon"><GitHub  size={18}/></span>{" "}GitHub</Button>
               </div>
             )

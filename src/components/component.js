@@ -164,17 +164,19 @@ export const Button = ({ children, link, width }) => {
     padding = "px-20 py-2"
   }
 
-  const className = `${padding} mb-1 rounded accent-gradient text-on-accent`
+  const className = `${padding} mb-3 ml-2 rounded accent-gradient text-on-accent`
 
   return (
-    <button
-      className={className}
+    <a
+      
       href={link}
       target="_blank"
       rel="noopener noreferrer"
     >
+    <button className={className}>
       {children}
-    </button>
+      </button>
+    </a>
   )
 }
 
