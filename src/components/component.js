@@ -17,7 +17,7 @@ export const ExperienceBlock = ({ icon, org, location, subitems }) => {
   return(
     <li className="bg-primary rounded-lg m-5 p-5">
         <div className="mb-5">
-          <div className="flex justify-between">
+          <div className="lg:flex lg:justify-between">
             <p className="text-primary font-bold text-lg">{org}</p>
             <p className="text-tertiary text-md">{location}</p>
           </div>
@@ -27,7 +27,7 @@ export const ExperienceBlock = ({ icon, org, location, subitems }) => {
               return(
                   <li>
                     <div className="mb-5">
-                      <div className="flex justify-between">
+                      <div className="lg:flex lg:justify-between">
                         <p className="text-secondary font-bold text-md">{item.title}</p>
                         <p className = "text-tertiary text-sm">{item.start} - {item.end}</p>
                       </div>
@@ -164,17 +164,17 @@ export const Button = ({ children, link, width }) => {
     padding = "px-20 py-2"
   }
 
-  const className = `${padding} rounded accent-gradient text-on-accent`
+  const className = `${padding} mb-1 rounded accent-gradient text-on-accent`
 
   return (
-    <a
+    <button
       className={className}
       href={link}
       target="_blank"
       rel="noopener noreferrer"
     >
       {children}
-    </a>
+    </button>
   )
 }
 
