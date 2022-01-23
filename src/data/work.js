@@ -10,7 +10,7 @@ const data_work = {
                     end: "Present",
                     info: [
                         "Developed and implemented over a dozen PHP web applications and SQL Server databases that have exceeded 2.62 million page views and handled in excess of $250,000 worth of device damage fines",
-                        "Deployed an open-source reporting platform and established 286 metrics, 64 automated email reports, and 25 dashboards ",
+                        "Mitigated security threats and vulnerabilities in web applications through patch management, identity management and firewall rules",
                         "Integrated 90+ custom ETL packages with Python, Visual Studio and SQL Server for extracting and ingesting data"
                     ]
                 },
@@ -64,7 +64,7 @@ const data_work = {
                     end: "Present",
                     info: [
                         "Developed and implemented over a dozen PHP web applications and SQL Server databases that have exceeded 2.62 million page views and handled in excess of $250,000 worth of device damage fines",
-                        "Deployed an open-source reporting platform and established 286 metrics, 64 automated email reports, and 25 dashboards ",
+                        "Mitigated security threats and vulnerabilities in web applications through patch management, identity management and firewall rules",
                         "Integrated 90+ custom ETL packages with Python, Visual Studio and SQL Server for extracting and ingesting data"
                     ]
                 },
