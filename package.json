@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.1",
-    "@tailwindcss/typography": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.2.5",
     "gatsby": "^4.6.0",
     "gatsby-image": "^3.11.0",
