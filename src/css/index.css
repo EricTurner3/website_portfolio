@@ -204,3 +204,12 @@ aside.sticky {
 .inline-svg-icon svg{
   display: inline
 }
+
+.filter-category{
+  cursor:pointer;
+}
+
+.filter-category.selected{
+  border: 2px solid var(--color-bg-accent);
+  font-weight: bold;
+}

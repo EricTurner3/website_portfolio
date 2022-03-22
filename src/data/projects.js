@@ -1,5 +1,40 @@
 // Ordered from most recent to oldest, add new projects to the top
+// the skills comes from /data/skills.js. In order to have the filter on the Projects page, the skill needs "filterable": true.
 const data_projects = [
+    {
+        title: "Defensive Security Labs",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I currently am using Blue Team Labs Online to gain further experience with key blue team skills such as Incident Response, Digital Forensics, Reverse Engeering, OSINT and more!",
+            "it":"Sto usando Blue Team Labs Online per acquisire ulteriore esperienza con le competenze chiave del blue team come Incident Response, Digital Forensics, Reverse Engeering, OSINT e altro!",
+        },
+        year: "2022",
+        links: [
+            {
+                label: "Blog Writeups",
+                url: "https://blog.ericturner.it/category/cybersecurity-hacking/blue-team-labs-online/",
+            },
+            {
+                label: "BTLO Profile",
+                url: "https://blueteamlabs.online/public/user/50f95231a04620abe9f20a"
+            }
+        ],
+    },
+    {
+        title: "Malware Analysis Lab",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I built a custom malware analysis lab using Virtual Machines running REMnux and Win10. It features a custom VPN and many tools for analyzing and looking for IOCs of malware samples",
+            "it":"Ho costruito un laboratorio di analisi malware personalizzato utilizzando macchine virtuali che eseguono REMnux e Win10. Dispone di una VPN personalizzata e di molti strumenti per analizzare e cercare gli IOC dei campioni di malware",
+        },
+        year: "2021",
+        links: [
+            {
+                label: "Blog Writeups",
+                url: "https://blog.ericturner.it/category/malware-analysis/",
+            }
+        ],
+    },
     {
         title: "Crime Analysis",
         skills:['python'],
@@ -92,8 +127,8 @@ const data_projects = [
         title: "Penetration Testing Labs",
         skills:['cybersecurity'],
         description: {
-            "en": "I am active on both TryHackMe and HackTheBox and have done many CTF challenges!",
-            "it": "Sono attivo sia su TryHackMe che su HackTheBox e ho fatto molte sfide CTF!",
+            "en": "I am active on both TryHackMe and HackTheBox and have done many challenges, machines and even a fortress!",
+            "it": "Sono attivo sia su TryHackMe che su HackTheBox e ho fatto molte sfide, macchine e anche una fortezza!",
         },
         year: "2021",
         links: [

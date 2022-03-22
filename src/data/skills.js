@@ -1,10 +1,11 @@
-
+// filterable: true will allow it to be filtered on the Projects page. Not all skills show up on projects page so this keeps it clean.
 const data_skills = {
     "python":{ 
         "name": "Python",
         "color": "green-400",
         "icon": "fab fa-python",
         "level": 3,
+        "filterable": true,
         "desc": {
             "en": "Python is one of my favorite languages! I have used it for several years in projects ranging from Web Dev to Data Science.",
             "it": "Python è uno dei miei linguaggi preferiti! L'ho usato per diversi anni in progetti che vanno dallo sviluppo web alla scienza dei dati."
@@ -35,6 +36,7 @@ const data_skills = {
         "color": "blue-400",
         "icon": "fab fa-php",
         "level": 3,
+        "filterable": true,
         "desc": {
             "en": "My current occupation started out as a full-stack web developer, before transitioning more into data integrations.",
             "it": "La mia attuale occupazione è iniziata come sviluppatore web full-stack, prima di passare più alle integrazioni di dati."
@@ -74,6 +76,7 @@ const data_skills = {
         "color": "yellow-500",
         "icon": "fas fa-user-secret",
         "level": 2,
+        "filterable": true,
         "desc": {
             "en": "A fascinating cat-and-mouse game between the defenders and the attackers.",
             "it": "Un affascinante gioco del gatto e del topo tra i difensori e gli attaccanti."
@@ -104,6 +107,7 @@ const data_skills = {
         "color": "purple-400",
         "icon": "fas fa-code-branch",
         "level": 3,
+        "filterable": false,
         "desc": {
             "en": "Most modern architectures rely on some sort of database backend.",
             "it": "Le architetture moderne si basano su una sorta di database backend."
@@ -134,6 +138,7 @@ const data_skills = {
         "color": "green-400",
         "icon": "fas fa-language",
         "level": 1,
+        "filterable": false,
         "desc": {
             "en": "Learning a new language is a beautiful and thrilling experience that connects you to an entirely new set of people and cultures.",
             "it": "Imparare una nuova lingua è un'esperienza bella ed emozionante che ti connette a un insieme completamente nuovo di persone e culture."
@@ -164,6 +169,7 @@ const data_skills = {
         "color": "yellow-200",
         "icon": "fas fa-user-tie",
         "level": 0,
+        "filterable": false,
         "desc": {
             "en": "Some skills are not as easily quantifiable but still important. Here are my top 3.",
             "it": "Alcune competenze non sono così facilmente quantificabili, ma sono comunque importanti. Ecco i miei 3 migliori."
@@ -174,8 +180,8 @@ const data_skills = {
                 "color": "primary",
                 "level": 0,
                 "desc": {
-                    "en": "I absolutely love growing and tackling new experiences. 2021 is the year of honing my skills in React, Unit Testing and DevOps.",
-                    "it": "Mi piace assolutamente crescere e affrontare nuove esperienze. Il 2021 è l'anno dell'affinamento delle mie competenze in React, Unit Testing e DevOps."
+                    "en": "I absolutely love growing and tackling new experiences. Most recently, I have been increasing both defensive and offensive security skills such as Incident Response and Penetration Testing.",
+                    "it": "Mi piace assolutamente crescere e affrontare nuove esperienze. Più di recente, ho aumentato le competenze di sicurezza sia difensive che offensive, come l'Incident Response e il Penetration Testing."
                 }
             },
             {

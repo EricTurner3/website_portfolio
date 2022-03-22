@@ -97,10 +97,10 @@ export const ProjectLink = ({ label, url }) => {
   )
 }
 
-export const ProjectPill = ({ label, pillColor }) => {
+export const ProjectPill = ({ label, data, pillColor, extraClass=" " }) => {
 
   return (
-    <span className={"text-xs text-primary rounded-full py-1 px-3 mb-2 mt-1 " + pillColor}>
+    <span className={"text-xs text-primary rounded-full py-1 px-3 mb-2 mt-1 " + pillColor +  " " + extraClass} data-skill={data}>
         {label}
     </span>
   )

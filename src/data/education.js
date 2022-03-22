@@ -1,7 +1,7 @@
 const data_education = {
     "en": [
         {
-            org: "Indiana University-Purdue University-Indianapolis",
+            org: "Purdue University (IUPUI)",
             location: "Indianapolis, IN",
             items:[
                 {
