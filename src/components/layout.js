@@ -6,7 +6,7 @@ import Header from "./header"
 import MobileNav from "./mobileNav"
 import Footer from "./footer"
 
-const Layout = ({ children, activePage, footer = true, footerType = "relative", container_width="max-w-screen-xl" }) => {
+const Layout = ({ children, activePage, showFooter = true, footerType = "relative", container_width="max-w-screen-xl" }) => {
   return (
     <>
       <ThemeProvider>
@@ -15,7 +15,7 @@ const Layout = ({ children, activePage, footer = true, footerType = "relative", 
         <main className={"container m-auto px-5 mt-16 sm:px-12 md:px-20 " + container_width}>
           {children}
         </main>
-        {footer && <Footer footerType={footerType} />}
+        {showFooter && <Footer footerType={footerType} />}
       </ThemeProvider>
     </>
   )

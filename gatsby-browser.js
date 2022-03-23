@@ -3,7 +3,8 @@ const $ = require("jquery")
 
 export const onInitialClientRender = () => {
   $(document).ready(function () {
-      console.log('jQuery Loaded')
+      console.log('jQuery Loaded');
+      $($('footer')[1]).hide(); // I can't figure out why, but on production build the footer appears twice. Only does in prod and not dev. Just hide it.
     $(document).on("click", ".filter-category", function(){
         var cat = $(this).data('skill');
         console.log('Projects - Filtering for ' + cat);
