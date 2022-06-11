@@ -28,7 +28,7 @@ export const ExperienceBlock = ({ icon, id, org, location, subitems }) => {
               return(
                   <li class="accordion-item">
                       <div className="accordion-header mb-5">
-                          <div className="acc-btn lg:flex lg:justify-between"
+                          <div className="acc-btn lg:flex lg:justify-between collapsed"
                           type="button" data-bs-toggle="collapse" data-bs-target={"#flush-collapse_"+item.id}
                               aria-expanded="false" aria-controls="flush-collapse_{{item.id}}">
                               <p className="acc-title text-secondary font-bold text-md" id={"flush-heading_"+item.id}>{item.title}</p>
