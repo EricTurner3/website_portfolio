@@ -1,4 +1,5 @@
 import "./src/css/index.css"
+import 'tw-elements'
 const $ = require("jquery")
 
 export const onInitialClientRender = () => {
