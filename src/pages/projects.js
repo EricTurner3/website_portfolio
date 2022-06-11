@@ -21,7 +21,7 @@ const ProjectsPage = () =>
       <ProjectPill
               label="All"
               data="*"
-              pillColor="bg-pink-200"
+              pillColor="bg-pink-400"
               extraClass="m-2 filter-category selected"
             />
         {Object.keys(data_skills).filter(skill => data_skills[skill].filterable === true).map(filteredName => {

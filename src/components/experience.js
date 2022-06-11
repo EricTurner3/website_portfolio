@@ -19,6 +19,7 @@ export const Experience = () => {
                 return (
                   <ExperienceBlock
                     icon      = ''
+                    id        = {edu.org_id}
                     org       = {edu.org}
                     location  = {edu.location}
                     subitems  = {edu.items}
@@ -36,6 +37,7 @@ export const Experience = () => {
               return (
                 <ExperienceBlock
                     icon      = ''
+                    id        = {work.org_id}
                     org       = {work.org}
                     location  = {work.location}
                     subitems  = {work.items}

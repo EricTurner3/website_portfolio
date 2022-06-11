@@ -2,7 +2,7 @@
 const data_skills = {
     "python":{ 
         "name": "Python",
-        "color": "green-400",
+        "color": "green-600",
         "icon": "fab fa-python",
         "level": 3,
         "filterable": true,
@@ -33,7 +33,7 @@ const data_skills = {
     },
     "web_dev":{
         "name": "Web Development",
-        "color": "blue-400",
+        "color": "blue-500",
         "icon": "fab fa-php",
         "level": 3,
         "filterable": true,
@@ -73,7 +73,7 @@ const data_skills = {
     },
     "cybersecurity":{
         "name": "Cybersecurity",
-        "color": "yellow-500",
+        "color": "purple-400",
         "icon": "fas fa-user-secret",
         "level": 2,
         "filterable": true,

@@ -7,6 +7,7 @@ module.exports = {
       "./src/**/*.jsx",
       "./src/**/*.ts",
       "./src/**/*.tsx",
+      './node_modules/tw-elements/dist/js/**/*.js'
     ],
     options: {
       safelist: ["ml-3",
@@ -141,5 +142,5 @@ module.exports = {
     textColor: ["responsive", "hover", "focus", "group-hover"],
     borderWidth: ["responsive", "hover", "focus"],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require('tw-elements/dist/plugin')],
 }

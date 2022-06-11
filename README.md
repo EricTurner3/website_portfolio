@@ -22,5 +22,5 @@ Inspiration
 Notes for Future Me
 ===
 After making any changes, run the production command then copy files over the FTP. Preview any changes with the dev command.
-* Dev Mode: `npm run develop`
-* Production: `npm run build`
+* Dev Mode: `yarn run develop`
+* Production: `yarn run build`

@@ -1,5 +1,5 @@
 import React from "react"
-
+import 'tw-elements';
 import { LocalizedLink } from "gatsby-theme-i18n"
 
 
@@ -13,43 +13,47 @@ export const NavLink = ({ to, children, title = "Link", selected = false }) => {
   )
 }
 
-export const ExperienceBlock = ({ icon, org, location, subitems }) => {
+export const ExperienceBlock = ({ icon, id, org, location, subitems }) => {
   return(
-    <li className="bg-primary rounded-lg m-5 p-5">
-        <div className="mb-5">
+      <li className="bg-primary rounded-lg m-5 p-5">
+          <div className="mb-5">
           <div className="lg:flex lg:justify-between">
-            <p className="text-primary font-bold text-lg">{org}</p>
-            <p className="text-tertiary text-md">{location}</p>
+              <p className="text-primary font-bold text-lg">{org}</p>
+              <p className="text-tertiary text-md">{location}</p>
           </div>
-          <hr style={{borderColor: 'var(--color-text-tertiary)'}} />
-          <div className="pl-3">
-            {subitems.map(item => {
+          <hr style={{borderColor: 'var(--color-text-tertiary)'}} class="mb-3" />
+
+          {/*Job Block*/}
+          <div className="accordion accordion-flush pl-3" id={"accordion_exp_"+id}>
+              {subitems.map(item => {
               return(
-                  <li>
-                    <div className="mb-5">
-                      <div className="lg:flex lg:justify-between">
-                        <p className="text-secondary font-bold text-md">{item.title}</p>
-                        <p className = "text-tertiary text-sm">{item.start} - {item.end}</p>
-                      </div>
-                      <div className="ml-5">
-                        
-                        <ul className="mt-2 text-tertiary pl-3" style={{listStyle: 'circle'}}>
+                  <li class="accordion-item">
+                      <div className="accordion-header mb-5">
+                          <div className="acc-btn lg:flex lg:justify-between"
+                          type="button" data-bs-toggle="collapse" data-bs-target={"#flush-collapse_"+item.id}
+                              aria-expanded="false" aria-controls="flush-collapse_{{item.id}}">
+                              <p className="acc-title text-secondary font-bold text-md" id={"flush-heading_"+item.id}>{item.title}</p>
+                              <p className = "text-tertiary text-sm">{item.start} - {item.end}</p>
+                          </div>
+                      <div id={"flush-collapse_"+item.id} className="ml-5 accordion-collapse collapse"
+                      aria-labelledby={"#flush-heading_"+item.id} data-bs-parent={"#accordion_exp_"+id}>
+                          <ul className="mt-2 text-tertiary pl-3" style={{listStyle: 'circle'}}>
                           {item.info.map(i => {
-                            return (
+                              return (
                               <li>{i}</li>
-                            )
+                              )
                           })} 
-                        </ul>
+                          </ul>
                       </div>
                       </div>
                   </li>
               )
               })
-            }
+              }
           </div>
           
           </div>
-    </li>
+      </li>
   )
 }
 
@@ -111,13 +115,13 @@ export const SkillPill = ({ level, lang, pt = "py-1" }) => {
   var level_txt;
 
   if (lang === 'en') {
-      if (level === 1){level_txt = 'Beginner'; pillColor = 'bg-green-400';} 
-      else if (level === 2){level_txt = 'Intermediate'; pillColor = 'bg-yellow-500';} 
+      if (level === 1){level_txt = 'Beginner'; pillColor = 'bg-green-600';} 
+      else if (level === 2){level_txt = 'Intermediate'; pillColor = 'bg-yellow-700';} 
       else if (level === 3){level_txt = 'Advanced'; pillColor = 'bg-red-500';} 
   }
   else if (lang === 'it'){
-      if (level === 1){level_txt = 'Principiante'; pillColor = 'bg-green-400';} 
-      else if (level === 2){level_txt = 'Intermedio'; pillColor = 'bg-yellow-500';} 
+      if (level === 1){level_txt = 'Principiante'; pillColor = 'bg-green-600';} 
+      else if (level === 2){level_txt = 'Intermedio'; pillColor = 'bg-yellow-700';} 
       else if (level === 3){level_txt = 'Avanzato'; pillColor = 'bg-red-500';} 
   }
 

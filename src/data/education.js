@@ -1,10 +1,12 @@
 const data_education = {
     "en": [
         {
+            org_id: '715250f16c9c443daa36219829ad474b',
             org: "Purdue University (IUPUI)",
             location: "Indianapolis, IN",
             items:[
                 {
+                    id: 'ee8f8db8b59145ae84fb64c0c833d738',
                     title: "Bachelors - Information Technology",
                     start: "Jan 2016",
                     end: "May 2018",
@@ -21,10 +23,12 @@ const data_education = {
     ],
     "it":[
         {
-            org: "Indiana University-Purdue University-Indianapolis",
+            org_id: '715250f16c9c443daa36219829ad474b',
+            org: "Purdue University (IUPUI)",
             location: "Indianapolis, IN",
             items:[
                 {
+                    id: 'ee8f8db8b59145ae84fb64c0c833d738',
                     title: "Bachelors - Information Technology",
                     start: "Jan 2016",
                     end: "May 2018",

@@ -1,13 +1,33 @@
 const data_work = {
     "en": [
         {
+            org_id: '17452cb8211a4067ba70c9c85d45b97f',
+            org: "First Merchants Bank",
+            location: "Daleville, IN",
+            items: [
+                {
+                    id: 'ef06e8b23b814fdc889ab8a700f0ecf6',
+                    title: "Cybersecurity Analyst",
+                    start: "Apr 2022",
+                    end: "Present",
+                    info: [
+                        "Provide analysis of securit events and investigate cybersecurity threats to the environment",
+                        "Create and maintain key cybersecurity metrics",
+                        "Act as a technical and process subject matter expert (SME) for Cybersecurity operations. Including attestations, checks and functions."
+                    ]
+                } 
+            ]
+        },
+        {
+            org_id: '7e929b8e1a324e1b8cc258131182117c',
             org: "MSD Warren Township",
             location: "Indianapolis, IN",
             items: [
                 {
+                    id: '1dd4a12ab3e84a029996a0d25bafe9cc',
                     title: "Systems Integration Developer",
                     start: "May 2018",
-                    end: "Present",
+                    end: "Apr 2022",
                     info: [
                         "Developed and implemented over a dozen PHP web applications and SQL Server databases that have exceeded 2.62 million page views and handled in excess of $250,000 worth of device damage fines",
                         "Mitigated security threats and vulnerabilities in web applications through patch management, identity management and firewall rules",
@@ -15,6 +35,7 @@ const data_work = {
                     ]
                 },
                 {
+                    id: '21ee7b80faed4dc9b2e072d0643471b6',
                     title: "Tech Support I",
                     start: "Jul 2017",
                     end: "May 2018",
@@ -24,6 +45,7 @@ const data_work = {
                     ]
                 },
                 {
+                    id: '5a2b4b95452c4312824894dfd671b60a',
                     title: "Summer Technology Assistant",
                     start: "May 2017",
                     end: "Jul 2017",
@@ -37,10 +59,12 @@ const data_work = {
             ]
         },
         {
+           org_id: '11bab8c08a7a4401aff366eeef93a13f',
            org: "CVS Health",
            location: "Indianapolis, IN",
            items: [
                 {
+                    id: 'aad32ac9fca64779ae1de91992f60e7d',
                     title: "Shift Supervisor",
                     start: "Sep 2016",
                     end: "Sep 2017",
@@ -55,13 +79,33 @@ const data_work = {
     ],
     "it": [
         {
+            org_id: '17452cb8211a4067ba70c9c85d45b97f',
+            org: "First Merchants Bank",
+            location: "Daleville, IN",
+            items: [
+                {
+                    id: 'ef06e8b23b814fdc889ab8a700f0ecf6',
+                    title: "Cybersecurity Analyst",
+                    start: "Apr 2022",
+                    end: "Present",
+                    info: [
+                        "Provide analysis of securit events and investigate cybersecurity threats to the environment",
+                        "Create and maintain key cybersecurity metrics",
+                        "Act as a technical and process subject matter expert (SME) for Cybersecurity operations. Including attestations, checks and functions."
+                    ]
+                } 
+            ]
+        },
+        {
+            org_id: '7e929b8e1a324e1b8cc258131182117c',
             org: "MSD Warren Township",
             location: "Indianapolis, IN",
             items: [
                 {
+                    id: '1dd4a12ab3e84a029996a0d25bafe9cc',
                     title: "Systems Integration Developer",
                     start: "May 2018",
-                    end: "Present",
+                    end: "Apr 2022",
                     info: [
                         "Developed and implemented over a dozen PHP web applications and SQL Server databases that have exceeded 2.62 million page views and handled in excess of $250,000 worth of device damage fines",
                         "Mitigated security threats and vulnerabilities in web applications through patch management, identity management and firewall rules",
@@ -69,6 +113,7 @@ const data_work = {
                     ]
                 },
                 {
+                    id: '21ee7b80faed4dc9b2e072d0643471b6',
                     title: "Tech Support I",
                     start: "Jul 2017",
                     end: "May 2018",
@@ -78,6 +123,7 @@ const data_work = {
                     ]
                 },
                 {
+                    id: '5a2b4b95452c4312824894dfd671b60a',
                     title: "Summer Technology Assistant",
                     start: "May 2017",
                     end: "Jul 2017",
@@ -91,10 +137,12 @@ const data_work = {
             ]
         },
         {
+           org_id: '11bab8c08a7a4401aff366eeef93a13f',
            org: "CVS Health",
            location: "Indianapolis, IN",
            items: [
                 {
+                    id: 'aad32ac9fca64779ae1de91992f60e7d',
                     title: "Shift Supervisor",
                     start: "Sep 2016",
                     end: "Sep 2017",
