@@ -38,7 +38,7 @@
     "react-dom": "^17.0.1",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
-    "react-i18next": "^11.8.15",
+    "react-i18next": "^11.15.4",
     "react-show-more-text": "^1.4.6",
     "sharp": "^0.29.3",
     "stream-browserify": "^3.0.0",
