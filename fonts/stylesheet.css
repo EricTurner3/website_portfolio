@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani Regular'), local('Rajdhani-Regular'),
+        url('Rajdhani-Regular.woff2') format('woff2'),
+        url('Rajdhani-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani Bold'), local('Rajdhani-Bold'),
+        url('Rajdhani-Bold.woff2') format('woff2'),
+        url('Rajdhani-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani SemiBold'), local('Rajdhani-SemiBold'),
+        url('Rajdhani-SemiBold.woff2') format('woff2'),
+        url('Rajdhani-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani Medium'), local('Rajdhani-Medium'),
+        url('Rajdhani-Medium.woff2') format('woff2'),
+        url('Rajdhani-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani Regular'), local('Rajdhani-Regular'),
+        url('Rajdhani-Regular.woff2') format('woff2'),
+        url('Rajdhani-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: local('Rajdhani Light'), local('Rajdhani-Light'),
+        url('Rajdhani-Light.woff2') format('woff2'),
+        url('Rajdhani-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron Bold'), local('Orbitron-Bold'),
+        url('Orbitron-Bold.woff2') format('woff2'),
+        url('Orbitron-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron ExtraBold'), local('Orbitron-ExtraBold'),
+        url('Orbitron-ExtraBold.woff2') format('woff2'),
+        url('Orbitron-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron Regular'), local('Orbitron-Regular'),
+        url('Orbitron-Regular.woff2') format('woff2'),
+        url('Orbitron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron Black'), local('Orbitron-Black'),
+        url('Orbitron-Black.woff2') format('woff2'),
+        url('Orbitron-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron SemiBold'), local('Orbitron-SemiBold'),
+        url('Orbitron-SemiBold.woff2') format('woff2'),
+        url('Orbitron-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron Medium'), local('Orbitron-Medium'),
+        url('Orbitron-Medium.woff2') format('woff2'),
+        url('Orbitron-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

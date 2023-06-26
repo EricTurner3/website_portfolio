@@ -1,26 +1,11 @@
 # portfolio
  My current website at [ericturner.it](https://ericturner.it)
 
+While the 2021/2022 version of Gatsby was neat, I found it a pain having to setup a dev instance each time and rebuild the static site when I needed to make changes.
+I also don't need a full stack website with a database for something as simple as a portfolio website. This website uses JSON files in /data/ and populates them using handlebars templating in a single-page html file.
 
-Framework & Resources
-===
-* [Gatsby.js](https://www.gatsbyjs.com/) - Front end framework for static sites
-* [React](https://reactjs.org/) - Gatsby.js is built on top of React!
-* [Tailwind CSS](https://tailwindcss.com/) - Front end CSS framework that ties in with React, also includes Inter font
-* [Blobmaker.app](https://www.blobmaker.app/) - Randomly generated blob that goes behind my avatar
-* [React Chrono](https://github.com/prabhuignoto/react-chrono) - Vertical timeline plugin for React
-* [Flat Icon](https://flaticon.com) - Sun & Moon SVG icons for light/dark mode
-* [Feather](https://feathericons.com/) - (react-feather) Social Icons 
-* [Bitmoji](https://bitmoji.com) - avatar generation
-
-
-Inspiration
-===
-* jeffjadulco.com - Dark mode / light mode, project grid
-* [Freelancer Landing Page // Dribbble.com](https://dribbble.com/shots/15319926-Freelancer-Landing-Page) - hero
-
-Notes for Future Me
-===
-After making any changes, run the production command then copy files over the FTP. Preview any changes with the dev command.
-* Dev Mode: `yarn run develop`
-* Production: `yarn run build`
+# Technologies
+ - Bootstrap 5.3.0
+ - handlebars v4.7.7
+ - jQuery 3.7.0
+ - [cyberpunk-css](https://github.com/alddesign/cyberpunk-css)

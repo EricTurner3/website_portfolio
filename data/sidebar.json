@@ -1,0 +1,17 @@
+{
+    "data":[
+        {"left":"REGION", "right":"MIDWEST, UNITED STATES", "link":false, "module_end":true},
+
+        {"left":"POSITION", "right":"CYBERSECURITY ANALYST", "link":false, "module_end":true},
+
+        {"left":"CERTIFICATIONS", "right":"COMPTIA SECURITY+", "link":false, "module_end":false},
+        {"left":"", "right":"COMPTIA PENTEST+", "link":false, "module_end":false},
+        {"left":"", "right":"COMPTIA CYSA+", "link":false, "module_end":true}
+    ],
+    "_help":[
+        "[left] is the red text on the left.",
+        "[right] is the yellow text on the right.",
+        "[link], if true, will turn the right col into a hyperlink",
+        "[module_end], if true, will create a line break before the next line"
+    ]
+}

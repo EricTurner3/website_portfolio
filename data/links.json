@@ -1,0 +1,6 @@
+{
+    "links": [
+        { "name": "Home", "link": "#", "icon": "fas fa-home"},
+        { "name": "Blog", "link": "https://blog.ericturner.it", "icon": "fas fa-blog"}
+    ]
+}

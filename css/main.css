@@ -1,0 +1,81 @@
+:root{
+  --color-bg-accent: #5b9fe1;
+  --color-bg-primary: #152c42;        /* old #2c2c2e */
+  --color-bg-secondary: #0d1a27;      /* old #1c1c1e */
+  --color-bg-accent-hover: #5b9fe1;
+
+  --color-text-accent: rgb(100, 210, 255);
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-tertiary: #a0aec0;
+  --color-text-on-accent: #1a202c;
+
+  --color-fill-primary: rgb(100, 210, 255);
+  --color-fill-secondary: #161b25;
+
+  --color-gradient-accent1: rgb(100, 210, 255);
+  --color-gradient-accent2: #2482df;
+
+  --color-code-background: #161b25;
+  --color-code-text: #edf2f7;
+  --color-code-comment: #718096;
+  --color-code-punctuation: #edf2f7;
+  --color-code-const: #ff79c6;
+  --color-code-bool: #bd93f9;
+  --color-code-string: #50fa7b;
+  --color-code-var: #f8f8f2;
+  --color-code-func: #f1fa8c;
+  --color-code-keyword: #8be9fd;
+  --color-code-regex: #ffb86c;
+
+  --sidebar-color: 0,0,0;
+  --sidebar-opacity: 0.25;
+
+  --topnav-height: 56px;
+  --sidebar-width: 20em;
+
+    /*https://www.behance.net/gallery/133185623/Cyberpunk-2077User-Interface-(Part-2)*/
+  --cyberpunk_red: #F75049;
+  --cyberpunk_cyan: #5EF6FF;
+  --cyberpunk_green: #1DED83;
+  --cyberpunk_blue: #2570D4;
+  --cyberpunk_purple: #9D2BF5;
+  --cyberpunk_orange: #FB932E;
+  --cyberpunk_yellow: #F0B537;
+}
+
+body{
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    font-family: 'Rajdhani';
+}
+
+
+.topnav {
+    background-color: rgba(var(--sidebar-color),var(--sidebar-opacity))!important;
+    z-index: 1039;
+    padding-left: 0;
+    height: var(--topnav-height);
+}
+.sidebar {
+    background-color: rgba(var(--sidebar-color),var(--sidebar-opacity))!important;
+    width: var(--sidebar-width);
+    height: 100vh;
+    z-index: 1038;
+}
+
+.content{
+    padding: 2em;
+}
+
+#output-nav-links{
+    list-style: none;
+}
+
+.cyber-red{
+    color: var(--cyberpunk_red);
+}
+
+.cyber-yellow{
+    color: var(--cyberpunk_yellow);
+}
