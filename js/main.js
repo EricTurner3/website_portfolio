@@ -12,6 +12,15 @@ function build_template(element){
     });
 }
 
+function swapText(){
+    var text1 = 'cybersecurity analyst';
+    var text2 =  'サイバーセキュリティアナリスト';
+    
+    var el = $('.subhero');
+    el.data('text', (el.data('text') === text1 ? text2 : text1));
+    el.children()[0].innerText = (el.children()[0].innerText === text1 ? text2 : text1);
+}
+
 $(function() {
     // grab all handlebars templates
     var templates = $("script[type='text/x-handlebars-template']");
@@ -21,6 +30,11 @@ $(function() {
     $.each( templates, function( key, value ) {
         build_template(value)
       });
+
+    // main hero text
+    //setInterval(swapText, 5000)
+
+    
 });
 
 

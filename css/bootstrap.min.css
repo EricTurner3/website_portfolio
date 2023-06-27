@@ -256,7 +256,7 @@ hr {
 }
 
 .h5,h5 {
-    font-size: 1.25rem
+    font-size: 1.25rem;
 }
 
 .h6,h6 {
@@ -8267,7 +8267,7 @@ textarea.form-control-lg {
 }
 
 .flex-column {
-    flex-direction: column!important
+    flex-direction: column!important;
 }
 
 .flex-row-reverse {
@@ -8585,7 +8585,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-    margin-bottom: 0!important
+    margin-bottom: 0!important;
 }
 
 .mb-1 {

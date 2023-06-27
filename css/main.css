@@ -28,8 +28,8 @@
   --color-code-keyword: #8be9fd;
   --color-code-regex: #ffb86c;
 
-  --sidebar-color: 0,0,0;
-  --sidebar-opacity: 0.25;
+  --sidebar-color: 40, 15, 15;
+  --sidebar-opacity: 0.3;
 
   --topnav-height: 56px;
   --sidebar-width: 20em;
@@ -42,6 +42,10 @@
   --cyberpunk_purple: #9D2BF5;
   --cyberpunk_orange: #FB932E;
   --cyberpunk_yellow: #F0B537;
+
+  
+  --section-bg--300: 41, 12, 12;
+  --section-bg--500: 69, 23, 23;
 }
 
 body{
@@ -79,3 +83,46 @@ body{
 .cyber-yellow{
     color: var(--cyberpunk_yellow);
 }
+
+.hero-text{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.clickable{
+    cursor: pointer;
+    z-index: 200;
+}
+.hero-arrow{
+    z-index: 500;
+    font-size: 3em;
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+}
+.half-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.anim-delay-0{
+    animation-delay: 365ms !important;
+    animation-duration: 3s !important;
+}
+
+.anim-delay-1{
+    animation-delay: 680ms !important;
+    animation-duration: 5s !important;
+}
+.anim-delay-2{
+    animation-delay: 1290ms !important;
+    animation-duration: 7s  !important;
+}
+  
+section { background: rgba(var(--section-bg--300), 0.3); }
+section:nth-child(odd) {background: rgba(var(--section-bg--500),0.3);}

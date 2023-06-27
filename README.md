@@ -9,3 +9,5 @@ I also don't need a full stack website with a database for something as simple a
  - handlebars v4.7.7
  - jQuery 3.7.0
  - [cyberpunk-css](https://github.com/alddesign/cyberpunk-css)
+ - [cyberpunk glitch](https://codepen.io/mattgrosswork/pen/VwprebG)
+ - [cyberpunk ui elements](https://codepen.io/hussard/pen/ExgbXMP)

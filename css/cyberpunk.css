@@ -482,8 +482,8 @@
 
 @keyframes cyber-glitch-2 
 {
-    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
-    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    0% {/* clip-path: var(--og-clip-path); */transform: translateX(0);text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);transform: translateX(0);/* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */}
     4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
     6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
     8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
@@ -556,11 +556,13 @@
     --tile-width: 360px;
     --tile-padding: 4px;
     --tile-edges: 20px;
-    --label-margins: calc(var(--tile-edges) - var(--tile-padding));
-    --og-clip-path: polygon(0 0, 0 calc(100% - var(--tile-edges)), var(--tile-edges) 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0);
+    --label-margins: calc(var(
+    --tile-edges) - var(--tile-padding));
+    --og-clip-path: polygon(0 0, 0 calc(100% - var(
+    --tile-edges)), var(--tile-edges) 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0);
     width: var(--tile-width);
     min-height: 60px;
-    clip-path: var(--og-clip-path);
+    clip-path: var(--ui);
     padding: var(--tile-padding);
     padding-bottom: var(--tile-edges);
 }
