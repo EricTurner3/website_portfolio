@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/cyberpunk.css">
     <link rel="stylesheet" href="./css/cyberpunk_ui.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/scanlines.css">
     <script src="./js/jquery-3.7.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/handlebars.min-v4.7.7.js"></script>
@@ -21,6 +22,7 @@
 </head>
 
 <body>
+    <div class="scanlines w-100" style="height:100%; position:absolute; overflow:hidden;"></div>
     <!-- Templates -->
     <script id="template-nav-links" type="text/x-handlebars-template" data-output="#output-nav-links" data-src="links.json">
         {{#each links}}
@@ -32,7 +34,9 @@
         {{/each}}
     </script>
 
-    <script id="template-sidebar" type="text/x-handlebars-template" data-output="#person_data" data-src="sidebar.json">
+    <script id="template-about" type="text/x-handlebars-template" data-output="#person_data" data-src="about.json">
+        <h4 class="fw-bold">{{header}}</h4>
+        <hr/>
         {{#each data}}
             <p class="d-flex justify-content-between {{#if module_end}}{{else}}mb-0{{/if}}">
                 <span class="cyber-red fw-bold">{{left}}</span>
@@ -43,6 +47,28 @@
                 {{/if}}
             </p>
                     
+        {{/each}}
+    </script>
+
+    <script id="template-work" type="text/x-handlebars-template" data-output="#output_work" data-src="work.json">
+        {{#each jobs}}
+        <h2 class="mt-2 fw-bold">{{org}}</h2>
+        <div><span class="fw-medium">{{location}}</span></div>
+            {{#each items}}
+                <div class="col pad m-2 mb-5">
+                    <div class="pad__body">
+                        <h5 class="fw-bold">{{title}}</h5>
+                        <span class="fw-medium">{{start}} - {{end}}</span>
+                        <hr/>
+                        <ul class="cyber-bullets">
+                            {{#each info}}
+                            <li class="cyber-yellow fw-medium">{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        
+                    </div>
+                </div>
+            {{/each}}
         {{/each}}
     </script>
 
@@ -61,46 +87,22 @@
             <a class="hero-arrow fw-bold" href="#about"><span class="clickable"><i class="fas fa-chevron-down fa-xl"></i></span></a>
         </div>
         
-        <section class="half-section container-fluid" id="about">
-
-            <div class="row h-100 w-100 m-2">
-                <div class="col-4 d-flex">
-                    <img src="img/eric.png" class="cyber-glitch-0 w-100 align-self-center" title="me, bitmoji" />
-                </div>
-                <div class="col-8 pad" >
-                    <div class="pad__body">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum</p>
+        <section class="container-fluid" id="about">
+            <div class="container  mt-2">
+                <h1 class="fw-bolder orbitron text-center mt-2 mb-2">ABOUT</h1>
+                <div class="col-12 pad mb-2" >
+                    <div id="person_data" class="pad__body">
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="half-section container-fluid" id="career">
-            <div class="row">
-
-                <div class="col pad m-2 cyber-glitch-1 anim-delay-0">
-                    <div class="pad__body">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="col pad m-2 cyber-glitch-1 anim-delay-2">
-                    <div class="pad__body">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="col pad m-2 cyber-glitch-1 anim-delay-1">
-                    <div class="pad__body">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
+        <section class="container-fluid" id="career">
+            <div class="container">
+                <h1 class="fw-bolder orbitron text-center mt-2 mb-2">WORK</h1>
+                <div id="output_work" class="row"></div>
             </div>
+            
         </section>
         
     </main>

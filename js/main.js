@@ -22,6 +22,9 @@ function swapText(){
 }
 
 $(function() {
+    Handlebars.registerHelper('randomNum', function (min_value, max_value) {
+        return Math.floor(Math.random() * (max_value - min_value) + min_value);
+    })
     // grab all handlebars templates
     var templates = $("script[type='text/x-handlebars-template']");
     
@@ -33,7 +36,17 @@ $(function() {
 
     // main hero text
     //setInterval(swapText, 5000)
-
+    /*
+    $.each($('.random-glitch'), function(i, e){
+        var ms = Math.floor(Math.random() * (800 - 100) + 100);
+        var s = Math.floor(Math.random() * (9 - 1) + 1);
+        console.log(' - Setting Header "' + e.innerText + '" to ' + ms + 'ms delay; ' + s + 's duration')
+        $(e).css({
+            'animation-delay': ms.toString() + 'ms',
+            'animation-duration': s.toString() + 's'
+        }).hide().show(0);
+    })
+    */
     
 });
 

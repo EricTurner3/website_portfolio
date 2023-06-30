@@ -126,3 +126,19 @@ body{
   
 section { background: rgba(var(--section-bg--300), 0.3); }
 section:nth-child(odd) {background: rgba(var(--section-bg--500),0.3);}
+
+.cyber-bullets{
+    list-style: none;
+  }
+  
+.cyber-bullets li::before {
+    content: "\25AA";
+    color: var(--cyberpunk_red);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+.orbitron{
+    font-family: 'Orbitron' !important;
+}

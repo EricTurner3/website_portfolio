@@ -19,28 +19,37 @@
     --colors-secondary--500: #2be4ea;
     --colors-secondary--900: #295459;
     --colors-tertiary--500: #fed33f;
-    --colors-on_bg--500: var(--colors-primary--500);
-    --colors-on_tertiary--500: var(--colors-bg--300);
-    --colors-on_primary--500: var(--colors-primary--200);
+    --colors-on_bg--500: var(
+    --colors-primary--500);
+    --colors-on_tertiary--500: var(
+    --colors-bg--300);
+    --colors-on_primary--500: var(
+    --colors-primary--200);
     --colors-active--500: #2bfea0;
-    --fonts-primary: "Rajdhani", sans-serif;
-    --fonts-secondary: "VT323", monospace;
-    --ui-glow: 0 0 5px var(--colors-primary--500);
-    --ui-glow-borders--500: 0 0 3px var(--colors-primary--500);
+    --fonts-primary:
+    "Rajdhani", sans-serif;
+    --fonts-secondary:
+    "VT323", monospace;
+    --ui-glow: 0 0 5px var(
+    --colors-primary--500);
+    --ui-glow-borders--500: 0 0 3px var(
+    --colors-primary--500);
     --ui-glow-color: currentcolor;
-    --ui-glow-text: -9px -6px 40px var(--ui-glow-color);
-    --ui-glow-text--dimmed: -9px -6px 40px var(--ui-glow-color);
+    --ui-glow-text: -9px -6px 40px var(
+    --ui-glow-color);
+    --ui-glow-text--dimmed: -9px -6px 40px var(
+    --ui-glow-color);
     --ui-elevation--1: 2px 2px 0 rgba(0, 0, 0, 0.8);
     --ui-notch-amount: 1rem;
     --ui-notch-hypotenuse: 22.627416px; /* hypothenuse of --ui-notch-amount */
     --ui-notch-path: polygon(
       0 0,
       100% 0,
-      100% calc(100% - var(--ui-notch-amount) + 2px),
+      100% calc(100% - var(
+    --ui-notch-amount) + 2px),
       calc(100% - var(--ui-notch-amount) + 2px) 100%,
       0 100%
     );
-  
     background-color: var(--colors-bg--500);
     background-image: radial-gradient(
       ellipse at 33% 10%,
