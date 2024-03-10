@@ -14,7 +14,7 @@ const Footer = ({footerType}) => {
               className="text-xs tracking-wider self-center md:self-end"
               aria-label="Copyright"
             >
-              © 2021 Eric Turner. {t('footer-reserved')}. / <ExtLink link="https://www.flaticon.com/free-icon/sun_66275" newTab>Sun</ExtLink> & <ExtLink link="https://www.flaticon.com/free-icon/moon_702471" newTab>Moon</ExtLink> {t('footer-icons')}
+              © 2021 - 2024 Eric Turner. {t('footer-reserved')}. / <ExtLink link="https://www.flaticon.com/free-icon/sun_66275" newTab>Sun</ExtLink> & <ExtLink link="https://www.flaticon.com/free-icon/moon_702471" newTab>Moon</ExtLink> {t('footer-icons')}
             </span>
             <div className="flex flex-row items-center space-x-4 justify-center md:justify-end">
               <span>

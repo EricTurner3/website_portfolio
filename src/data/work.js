@@ -11,9 +11,10 @@ const data_work = {
                     start: "Apr 2022",
                     end: "Present",
                     info: [
-                        "Provide analysis of securit events and investigate cybersecurity threats to the environment",
+                        "Provide analysis of security events and investigate cybersecurity threats to the environment",
                         "Create and maintain key cybersecurity metrics",
-                        "Act as a technical and process subject matter expert (SME) for Cybersecurity operations. Including attestations, checks and functions."
+                        "Act as a technical and process subject matter expert (SME) for Cybersecurity operations. Including attestations, checks and functions.",
+                        "Lead developer for SOAR automation platform: including playbooks, API calls, web UI and metrics"
                     ]
                 } 
             ]

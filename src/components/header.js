@@ -4,7 +4,7 @@ import { NavLink} from "./component"
 import { useTranslation } from "react-i18next"
 
 const Header = ({ activePage }) => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <header className="container m-auto px-5 sm:px-12 md:px-20 max-w-screen-xl h-32 overflow-hidden">
       <nav
@@ -17,7 +17,7 @@ const Header = ({ activePage }) => {
         <span className="hidden sm:flex flex-grow items-center space-x-6">
 
           <NavLink to="/" title="Home" selected={activePage === "/"}>{t("home")}</NavLink>
-          <NavLink to="/projects" title="Projects" selected={activePage === "projects"}>{t("projects")}</NavLink>
+          <NavLink to="/portfolio" title="Portfolio" selected={activePage === "portfolio"}>{t("portfolio")}</NavLink>
           <NavLink to="/skills" title="Skills" selected={activePage === "skills"}>{t("skills")}</NavLink>
           <a href="https://blog.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_tech")}</a>
           {/*<a href="https://italiano.ericturner.it" className="font-normal text-base hover:text-accent transition duration-150 text-secondary">{t("blog_it")}</a>*/}

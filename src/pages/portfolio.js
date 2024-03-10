@@ -6,13 +6,13 @@ import { useTranslation } from "react-i18next"
 import Seo from "../components/seo"
 import data_skills from "../data/skills"
 
-const ProjectsPage = () => 
+const PortfolioPage = () => 
 {
   const { t } = useTranslation()
 
 
   return (
-    <Layout activePage="projects"  container_width="max-w-screen-2xl">
+    <Layout activePage="portfolio"  container_width="max-w-screen-2xl">
     <Seo />
       <Heading>{t('project_header')}</Heading>
       <p className="text-tertiary">{t('project_subheader')}</p>
@@ -42,4 +42,4 @@ const ProjectsPage = () =>
   )
 }
 
-export default ProjectsPage
+export default PortfolioPage

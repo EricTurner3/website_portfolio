@@ -158,7 +158,7 @@ const data_skills = {
                 "color": "primary",
                 "level": 1,
                 "desc": {
-                    "en": "I had Spanish for many years during 2-12 grade. It is very similar to Italian in some aspects!",
+                    "en": "Basic understanding, mostly reading / writing focus",
                     "it": "Ho avuto lo spagnolo per molti anni durante i 2-12 anni. È molto simile all'italiano in alcuni aspetti!"
                 }
             }

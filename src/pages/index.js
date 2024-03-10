@@ -44,10 +44,17 @@ const IndexPage = () => {
                   />
                   <StaticImage
                     className="m-2"
-                    src="../images/cnvp.png" 
-                    alt="CompTIA Network Vulnerability Assessment Professional (CNVP)"
+                    src="../images/cysa.png" 
+                    alt="CompTIA Cybersecurity Analyst+"
+                    width="60"
+                    layout="constrained"
+                  />
+                  <StaticImage
+                    className="m-2"
+                    src="../images/chfi.png" 
+                    alt="EC-Council Computer Hacking Forensic Investigator"
                     placeholder="blurred"
-                    width="59"
+                    width="55"
                     layout="constrained"
                   />
                 </p>

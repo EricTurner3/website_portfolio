@@ -2,7 +2,48 @@
 // the skills comes from /data/skills.js. In order to have the filter on the Projects page, the skill needs "filterable": true.
 const data_projects = [
     {
+        title: "EC-Council Computer Hacking Forensic Investigator (CHFI)",
+        type: "Certification",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I completed the certification requirements for the CHFI exam in Nov 2023.",
+            "it":"",
+        },
+        year: "2023",
+        links: [
+            {
+                label: "View Certificate",
+                url: "/files/ECC-CHFI.pdf",
+            },
+            {
+                label: "About the Certification",
+                url: "https://www.eccouncil.org/train-certify/computer-hacking-forensic-investigator-chfi/"
+            }
+        ],
+    },
+    {
+        title: "CompTIA - Cybersecurity Analyst+",
+        type: "Certification",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I completed the certification requirements for the CySA+ exam in Feb 2023.",
+            "it":"",
+        },
+        year: "2023",
+        links: [
+            {
+                label: "View Certificate",
+                url: "/files/comptia-cysa.pdf",
+            },
+            {
+                label: "About the Certification",
+                url: "https://www.comptia.org/certifications/cybersecurity-analyst"
+            }
+        ],
+    },
+    {
         title: "Defensive Security Labs",
+        type: "Project",
         skills:['cybersecurity'],
         description: {
             "en": "I currently am using Blue Team Labs Online to gain further experience with key blue team skills such as Incident Response, Digital Forensics, Reverse Engeering, OSINT and more!",
@@ -22,6 +63,7 @@ const data_projects = [
     },
     {
         title: "Malware Analysis Lab",
+        type: "Project",
         skills:['cybersecurity'],
         description: {
             "en": "I built a custom malware analysis lab using Virtual Machines running REMnux and Win10. It features a custom VPN and many tools for analyzing and looking for IOCs of malware samples",
@@ -36,7 +78,48 @@ const data_projects = [
         ],
     },
     {
+        title: "CompTIA - PenTest+",
+        type: "Certification",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I completed the certification requirements for the PenTest+ exam in Sep 2021.",
+            "it":"",
+        },
+        year: "2021",
+        links: [
+            {
+                label: "View Certificate",
+                url: "/files/comptia-pentest.pdf",
+            },
+            {
+                label: "About the Certification",
+                url: "https://www.comptia.org/certifications/pentest"
+            }
+        ],
+    },
+    {
+        title: "CompTIA - Security+",
+        type: "Certification",
+        skills:['cybersecurity'],
+        description: {
+            "en": "I completed the certification requirements for the CySA+ exam in Aug 2021.",
+            "it":"",
+        },
+        year: "2021",
+        links: [
+            {
+                label: "View Certificate",
+                url: "/files/comptia-security.pdf",
+            },
+            {
+                label: "About the Certification",
+                url: "https://www.comptia.org/certifications/security"
+            }
+        ],
+    },
+    {
         title: "Crime Analysis",
+        type: "Project",
         skills:['python'],
         description: {
             "en": "Crime & Intelligence Analysis using and GIS, Python, Excel",
@@ -52,6 +135,7 @@ const data_projects = [
     },
     {
         title: "Laravel + React Devops Showcase",
+        type: "Project",
         skills:['web_dev'],
         description: {
             "en": "This project was a fantastic learning experience for me! I learned how to use composer, php artisan & git command line tools; Jest + enzyme for React component unit-testing; PHPUnit for Laravel API unit-testing; GitHub Actions to build a custom pipeline and push a release!",
@@ -76,6 +160,7 @@ const data_projects = [
     },
     {
         title: "Police Data Accessibility Project - ETL / Scrapers",
+        type: "Project",
         skills:['python'],
         description: {
             "en": "For the same org, I also was one of the contributers for some scrapers (CityProtect) and the main contributor for an automated ETL process for loading data into DoltHub!",
@@ -91,6 +176,7 @@ const data_projects = [
     },
     {
         title: "Police Data Accessibility Project - App",
+        type: "Project",
         skills:['python'],
         description: {
             "en": "One of my volunteer projects, I worked on the initial construction of the PDAP Django app which is used for displaying agencies and status for US Police Agencies!",
@@ -110,6 +196,7 @@ const data_projects = [
     },
     {
         title: "My Portfolio Website: 2021 Revamp",
+        type: "Project",
         skills:['web_dev'],
         description: {
             "en": "This website! Built with React, Gatsby JS, Tailwind CSS, and more!",
@@ -125,6 +212,7 @@ const data_projects = [
     },
     {
         title: "Penetration Testing Labs",
+        type: "Project",
         skills:['cybersecurity'],
         description: {
             "en": "I am active on both TryHackMe and HackTheBox and have done many challenges, machines and even a fortress!",
@@ -148,6 +236,7 @@ const data_projects = [
     },
     {
         title: "Random Person Generator",
+        type: "Project",
         skills:[ 'python'],
         description: {
             "en": "A Python Script that generates a plethora of details for a non-existent person",
@@ -167,6 +256,7 @@ const data_projects = [
     },
     {
         title: "Device Checkin Web App",
+        type: "Project",
         skills:[ 'web_dev'],
         description: {
             "en": "Also at work, I created another PHP MVC website that integrated with our SIS and Asset Manager to facilitate teachers checking in their student's devices at the end of the year.",
@@ -182,6 +272,7 @@ const data_projects = [
     },
     {
         title: "Prom Ticket Web App",
+        type: "Project",
         skills:[ 'web_dev'],
         description: {
             "en": "For the school district, I created a web interface in PHP w/ Bootstrap to help sell tickets, check-in at the event and help tally up votes for prom king and queen!",
@@ -198,6 +289,7 @@ const data_projects = [
     
     {
         title: "FB Messenger Chatbot",
+        type: "Project",
         skills:['web_dev'],
         description: {
             "en": "Although no longer active, I made a chatbot in Node.JS to help us decide where to go to dinner! It was pre-populated with some restaurants based on our interests.",

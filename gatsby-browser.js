@@ -12,11 +12,11 @@ export const onInitialClientRender = () => {
         // only elements in body that should exist are div#___gatsby, div#gatsby-announcer and a bunch of scripts
         var e = $(this)[0];
         //console.log(e);
-        if (e.id == '___gatsby'){}
+        if (e.id === '___gatsby'){}
           //console.log(' * Found #___gatsby, skipping...');
-        else if (e.id == 'gatsby-announcer' ){}
+        else if (e.id === 'gatsby-announcer' ){}
           //console.log(' * Found #gatsby-announcer, skipping...');
-        else if (e.tagName == 'SCRIPT'){}
+        else if (e.tagName === 'SCRIPT'){}
           //console.log(' * Found script, skipping...');
         else{
           console.log(' * Removing erroneous element: ');

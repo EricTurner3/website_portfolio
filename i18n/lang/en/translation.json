@@ -1,13 +1,13 @@
 {
     "home": "Home",
-    "projects": "Projects",
+    "portfolio": "Portfolio",
     "skills": "Skills",
     "blog_tech": "Tech Blog",
     "blog_it": "Italian Blog",
     "switch": "Cambia a IT",
     "education": "Education",
     "professional_experience": "Professional Experience",
-    "project_header": "Project Showcase",
+    "project_header": "Portfolio",
     "project_subheader": "Some projects I have worked on with their associated skills. Most recent projects are at the top. Projects can be filtered with the buttons below.",
     "footer-reserved": "All Rights Reserved",
     "footer-icons": "icons provided by flaticon"
