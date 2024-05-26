@@ -15,7 +15,7 @@ const SkillGrid = _ => {
             <li
               id={id}
               key={skill.name}
-              className="py-5 px-6 relative group md:bg-secondary hover:bg-secondary rounded-lg"
+              className="py-5 px-6 relative group bg-secondary rounded-lg"
             >
               <div className="flex justify-between space-x-3 sm:space-x-0 pb-10">
                 <div>
