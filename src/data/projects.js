@@ -2,6 +2,26 @@
 // the skills comes from /data/skills.js. In order to have the filter on the Projects page, the skill needs "filterable": true.
 const data_projects = [
     {
+        title: "IBM Malware Analysis & Intro to Assembly",
+        type: "Certificate",
+        skills:['cybersecurity'],
+        description: {
+            "en": "Through capture the flag activities, demos and hands-on reverse engineering, I applied skills for malware analysis and the fundamentals of Assembly. Mar 2024.",
+            "it":"",
+        },
+        year: "2024",
+        links: [
+            {
+                label: "View Certificate",
+                url: "https://www.coursera.org/account/accomplishments/verify/27HF2YBYLJGU",
+            },
+            {
+                label: "About the Certificate",
+                url: "https://www.coursera.org/learn/malware-analysis-and-assembly"
+            }
+        ],
+    },
+    {
         title: "EC-Council Computer Hacking Forensic Investigator (CHFI)",
         type: "Certification",
         skills:['cybersecurity'],
