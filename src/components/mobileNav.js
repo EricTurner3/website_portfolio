@@ -62,7 +62,7 @@ const MobileNav = () => {
               <Link to="/">HOME</Link>
             </div>
             <div className="flex-grow">
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">PORTFOLIO</Link>
             </div>
             <div className="flex-grow">
               <Link to="/skills">SKILLS</Link>
@@ -70,10 +70,10 @@ const MobileNav = () => {
             <div className="flex-grow">
               <a href="https://blog.ericturner.it">TECH BLOG</a>
             </div>
-            <div className="flex-grow">
+            {/*<div className="flex-grow">
               <a href="https://italiano.ericturner.it">ITALIAN BLOG</a>
-            </div>
-            <ThemeToggle />
+            </div>*/}
+            {/*<ThemeToggle />*/}
           </nav>
         </div>
       )}

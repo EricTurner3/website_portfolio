@@ -14,15 +14,15 @@ const IndexPage = () => {
   return (
     <Layout activePage="/">
     <Seo />
-      <div className="mt-12 flex flex-col-reverse lg:flex-row items-center lg:justify-between lg:space-x-6">
+      <div className="mt-12 flex flex-col-reverse lg:flex-row items-center lg:justify-between lg:space-x-6 ">
         <div className="flex flex-row">
           {data_me[i18n.language].map(me => {
             return (
               <div className='flex-col lg:mr-10'>
-                <h1 className="mt-12 lg:mt-0 max-w-3xl text-3xl sm:text-4xl text-primary font-semibold sm:text-left md:text-center lg:text-left">
+                <h1 className="mt-12 lg:mt-0 max-w-3xl text-3xl sm:text-4xl text-primary text-glow-primary font-semibold sm:text-left md:text-center lg:text-left">
                   {me.name}
                 </h1>
-                <p className="text-xl mt-2 mb-2 text-fill-primary sm:text-left md:text-center lg:text-left">
+                <p className="text-xl mt-2 mb-2 text-fill-primary text-glow-accent sm:text-left md:text-center lg:text-left">
                   {me.jobtitle}
                 </p>
                 <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">

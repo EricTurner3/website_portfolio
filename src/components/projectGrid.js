@@ -18,7 +18,7 @@ const ProjectGrid = _ => {
             >
               <div className="flex justify-between space-x-3 sm:space-x-0 pb-10">
                 <div>
-                  <h3 className="text-lg font-semibold text-primary ">
+                  <h3 className="text-lg font-semibold text-primary text-glow-primary">
                       {project.title}
                   </h3>
                   <span className={project.type === 'Certification' ? ' text-xs font-semibold text-yellow-400' : 'text-xs font-semibold text-red-400'}>{project.type}</span>

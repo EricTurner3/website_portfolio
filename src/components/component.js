@@ -133,7 +133,7 @@ export const SkillPill = ({ level, lang, pt = "py-1" }) => {
 
 export const Heading = ({ children }) => {
   return (
-    <h2 className="relative mt-12 mb-3 text-2xl font-bold text-accent">
+    <h2 className="relative mt-12 mb-3 text-2xl font-bold text-accent text-glow-accent-two">
       {children}
     </h2>
   )
@@ -167,7 +167,7 @@ export const Button = ({ children, link, width }) => {
     padding = "px-20 py-2"
   }
 
-  const className = `${padding} mb-3 ml-2 rounded accent-gradient text-on-accent`
+  const className = `${padding} mb-3 ml-2 cyber-btn`
 
   return (
     <a

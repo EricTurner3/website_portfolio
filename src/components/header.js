@@ -24,7 +24,7 @@ const Header = ({ activePage }) => {
           
         </span>
         {/*<a href={ 'https://ericturner.it/' + (i18n.language === 'en' ? 'it/' : '/') + (activePage === '/' ? '' : activePage)} title={t("switch")}>{i18n.language} </a>*/}
-        <ThemeToggle className="hidden sm:block hover:text-accent transition duration-150" />
+        {/*<ThemeToggle className="hidden sm:block hover:text-accent transition duration-150" /> */}
       </nav>
     </header>
   )

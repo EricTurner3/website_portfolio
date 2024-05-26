@@ -11,7 +11,7 @@ export const Experience = () => {
       <div className="container mx-auto pt-16">
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 container">
         <div >
-        <h1 className="text-3xl font-semibold text-center text-secondary">
+        <h1 className="text-3xl font-semibold text-center text-secondary text-glow-primary">
           {t('education')}
         </h1>
             <ul>
@@ -29,7 +29,7 @@ export const Experience = () => {
             </ul>
           </div>
           <div >
-          <h1 className="text-3xl font-semibold text-center text-secondary">
+          <h1 className="text-3xl font-semibold text-center text-secondary text-glow-primary">
           {t('professional_experience')}
           </h1>
             <ul>

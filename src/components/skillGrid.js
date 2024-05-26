@@ -21,7 +21,7 @@ const SkillGrid = _ => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary ">
                       <i className={skill.icon + " text-" + skill.color}></i> {" "}
-                      {skill.name}
+                      <span className="text-glow-primary">{skill.name}</span>
                   </h3>
                   <h4 className="font-base text-tertiary pr-3">
                     {skill.desc[i18n.language]}

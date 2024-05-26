@@ -19,20 +19,16 @@
   --color-bg-accent: #63b3ed;
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #edf2f7;
-  --color-bg-accent-hover: #4299e1;
-
-  --color-text-accent: rgb(90, 200, 250);
+  --color-bg-accent-hover: #73116c;
+  --color-text-accent: #c330b2;
   --color-text-primary: #2d3748;
   --color-text-secondary: #4a5568;
   --color-text-tertiary: #4a5568;
   --color-text-on-accent: #f7fafc;
-
-  --color-fill-primary: rgb(90, 200, 250);
+  --color-fill-primary: #c05bb6;
   --color-fill-secondary: #edf2f7;
-
-  --color-gradient-accent1: rgb(90, 200, 250);
-  --color-gradient-accent2: #2482df;
-
+  --color-gradient-accent1: #c330b2;
+  --color-gradient-accent2: #73116c;
   --color-code-background: #edf2f7;
   --color-code-text: #2d3748;
   --color-code-comment: #718096;
@@ -48,22 +44,18 @@
 
 .dark {
   --color-bg-accent: #5b9fe1;
-  --color-bg-primary: #152c42;        /* old #2c2c2e */
-  --color-bg-secondary: #0d1a27;      /* old #1c1c1e */
-  --color-bg-accent-hover: #5b9fe1;
-
-  --color-text-accent: rgb(100, 210, 255);
+  --color-bg-primary: rgba(18, 27, 59, 0.75);
+  --color-bg-secondary: rgba(8, 12, 27, 0.75);
+  --color-bg-accent-hover: #73116c;
+  --color-text-accent: #c330b2;
   --color-text-primary: #f7fafc;
   --color-text-secondary: #e2e8f0;
   --color-text-tertiary: #a0aec0;
   --color-text-on-accent: #1a202c;
-
-  --color-fill-primary: rgb(100, 210, 255);
+  --color-fill-primary: #1fc8e4;
   --color-fill-secondary: #161b25;
-
-  --color-gradient-accent1: rgb(100, 210, 255);
-  --color-gradient-accent2: #2482df;
-
+  --color-gradient-accent1: #c330b2;
+  --color-gradient-accent2: #73116c;
   --color-code-background: #161b25;
   --color-code-text: #edf2f7;
   --color-code-comment: #718096;
@@ -74,7 +66,7 @@
   --color-code-var: #f8f8f2;
   --color-code-func: #f1fa8c;
   --color-code-keyword: #8be9fd;
-  --color-code-regex: #ffb86c;
+  --color-code-regex: #ffb86c
 }
 
 @tailwind base;
@@ -87,6 +79,64 @@ body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   @apply antialiased;
+}
+.rounded-lg{
+    border-radius: 0rem !important;
+    border-color: var(--color-fill-primary);
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 0px 0px 3px 1px var(--color-fill-primary);
+    border-left: 1px solid var(--color-fill-primary);
+    border-right: 1px solid var(--color-fill-primary);
+    border-bottom: 1px solid var(--color-fill-primary);
+    /*clip-path: polygon(-15px 0%, calc(100% + 15px) 0%, calc(100% + 15px) 100%, 20px 100%, -15px calc(100% - 35px));*/
+}
+
+.cyber-btn{
+    color: var(--color-text-primary);
+    background: var(--color-bg-primary);
+    border-radius: 0rem;
+    border-color: var(--color-gradient-accent1);
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 0px 0px 3px 1px var(--color-gradient-accent1);
+}
+
+.cyber-btn:hover{
+  background: var(--color-bg-secondary);
+  box-shadow: 2px 2px 5px 2px var(--color-gradient-accent1);
+}
+
+.text-glow-primary{
+  text-shadow: 0 0 3px var(--color-text-primary);
+}
+
+.text-glow-accent{
+  text-shadow: 0 0 3px var(--color-fill-primary);
+}
+
+.text-glow-accent-two{
+  text-shadow: 0 0 3px var(--color-text-accent);
+}
+
+.backgroundimg{
+  background: rgba(0,0,0,0.55) url("../images/city.png");
+  background-blend-mode: darken;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  z-index: -1000;
+  position: fixed;
+}
+.backgroundimg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* Apply the blur */
+  pointer-events: none; /* Make the overlay click-through */
 }
 
 .full-width-container {

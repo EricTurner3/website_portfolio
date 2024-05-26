@@ -10,6 +10,7 @@ const Layout = ({ children, activePage, showFooter = true, footerType = "relativ
   return (
     <>
       <ThemeProvider>
+        <div className="backgroundimg"></div>
         <MobileNav />
         <Header activePage={activePage} />
         <main className={"container m-auto px-5 mt-16 sm:px-12 md:px-20 " + container_width}>
