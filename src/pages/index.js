@@ -27,41 +27,39 @@ const IndexPage = () => {
                 </p>
                 <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
                   <StaticImage
-                    className="m-2"
+                    className="m-2 badge-img"
                     src="../images/security.png" 
                     alt="CompTIA Security+ ce"
-                    placeholder="blurred"
-                    width="60"
-                    layout="constrained"
+                    width="600"
+                    layout="fullWidth"
                   />
                   <StaticImage
-                    className="m-2"
+                    className="m-2 badge-img"
                     src="../images/pentest.png" 
                     alt="CompTIA PenTest+ ce"
                     placeholder="blurred"
-                    width="60"
-                    layout="constrained"
+                    width="600"
+                    layout="fullWidth"
                   />
                   <StaticImage
-                    className="m-2"
+                    className="m-2 badge-img"
                     src="../images/cysa.png" 
                     alt="CompTIA Cybersecurity Analyst+"
-                    width="60"
-                    layout="constrained"
+                    width="600"
+                    layout="fullWidth"
                   />
                   <StaticImage
-                    className="m-2"
+                    className="m-2 badge-img"
                     src="../images/chfi.png" 
                     alt="EC-Council Computer Hacking Forensic Investigator"
                     placeholder="blurred"
-                    width="55"
-                    layout="constrained"
+                    width="600"
+                    layout="fullWidth"
                   />
                 </p>
                 <p className="text-secondary text-xs sm:text-left md:text-center lg:text-left">
                   {me.desc}
                 </p> <br />
-                <Button link={'/resume.pdf'}><span role="img" aria-label="paper">📃 </span>{me.cta_resume}</Button>
                 <Button link="mailto:me@ericturner.it"><span role="img" aria-label="wave">👋 </span>{me.cta_contact}</Button>
                 <Button link='https://linkedin.com/in/ericturner31'><span className="inline-svg-icon"><Linkedin size={18}/></span>{" "}LinkedIn</Button>
                 <Button link='https://github.com/EricTurner3'><span className="inline-svg-icon"><GitHub  size={18}/></span>{" "}GitHub</Button>

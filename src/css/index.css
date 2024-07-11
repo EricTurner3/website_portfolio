@@ -131,6 +131,11 @@ body {
   position: fixed;
 }
 
+.badge-img{
+  display: inline-block;
+  max-width: 60px;
+  min-width: 60px;
+}
 
 .full-width-container {
   width: 100vw;
